@@ -15,12 +15,12 @@
     <div class="navigation__wrapper">
       <button class="navigation__close button">Закрыть</button>
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="nvaigation__link">Главная</a></li>
-        <li class="navigation__item"><a href="#" class="nvaigation__link">Фото и видео</a></li>
-        <li class="navigation__item"><a href="#" class="nvaigation__link">Форма отзыва</a></li>
-        <li class="navigation__item"><a href="#" class="nvaigation__link">HTML Academy</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a></li>
       </ul>
-      <button class="navigation__sandwitch">Открыть/закрыть</button>
+      <button class="navigation__sandwich">Открыть/закрыть</button>
     </div>
   </nav>
   <div class="page-header__legend">
@@ -32,6 +32,9 @@
     <h2 class="page-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-content__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
   </section>
+  <!--
+  Вот этому всему (всем .feature) обертка может еще нужна дополнительная?
+  -->
   <div class="feature-image">
     <div class="feature">
       <div class="feature__title">Настоящий городок</div>
@@ -39,7 +42,7 @@
       <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
     </div>
     <div class="feature-image__picture">
-      <img src="#" alt="" class="feature-image__image">
+      <img src="#" alt="" class="feature-image__photo">
     </div>
   </div>
   <div class="feature feature--apartments">
@@ -61,7 +64,7 @@
       <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
     </div>
     <div class="feature-image__picture">
-      <img src="#" alt="" class="feature-image__image">
+      <img src="#" alt="" class="feature-image__photo">
     </div>
   </div>
   <div class="feature feature--gray">
@@ -89,6 +92,9 @@
 </main>
 <footer class="page-footer">
   <p class="page-footer__tag">#visitsedona</p>
+  <!--
+  Если мы захотим сделать этот блок переиспользуемым, может стоит его выделить в .social вместо хардкода его на футер .page-footer__social ?
+  -->
   <section class="page-footer__social">
     <ul class="page-footer__list">
       <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--twitter">twitter</a></li>
@@ -96,6 +102,11 @@
       <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--vk">vk</a></li>
     </ul>
   </section>
+  <!--
+  Вот в этом месте как лучше сделать?
+  Следуя БЭМ, желательно не создавать таких вот элементов элементов через "-", но page-footer__link уже используется выше для соц.сетей
+  Что вообще в таких ситуациях делать? Выносить все в отдельный блок (например, .copyrights) или есть другие варианты?
+  -->
   <div class="page-footer__copyrights">
     <span class="page-footer__author">Разработано</span>
     <a href="#" class="page-footer__author-link">
