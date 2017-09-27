@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+<header class="page-header">
+  <div class="logo">
+    <a href="#" class="logo__link">
+      <img src="#" alt="#" class="logo__image">
+    </a>
+  </div>
+  <nav class="navigation">
+    <div class="navigation__wrapper">
+      <button class="navigation__close button">Закрыть</button>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a></li>
+      </ul>
+      <button class="navigation__sandwich">Открыть/закрыть</button>
+    </div>
+  </nav>
+  <div class="page-header__legend">
+    <p class="page-header__brand">SEDONA</p>
+  </div>
+</header>
+<main class="page-content">
+  <section class="page-content__category">
+    <h2 class="page-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+    <p class="page-content__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+  </section>
+  <!--
+  Вот этому всему (всем .feature) обертка может еще нужна дополнительная?
+  -->
+  <div class="feature-image">
+    <div class="feature">
+      <div class="feature__title">Настоящий городок</div>
+      <div class="feature__number">№1</div>
+      <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
+    </div>
+    <div class="feature-image__picture">
+      <img src="#" alt="" class="feature-image__photo">
+    </div>
+  </div>
+  <div class="feature feature--apartments">
+    <div class="feature__title">Жилье</div>
+    <div class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+  </div>
+  <div class="feature feature--souvenirs">
+    <div class="feature__title">Сувениры</div>
+    <div class="feature__description">Не только китайского, но и местного производства!</div>
+  </div>
+  <div class="feature feature--food">
+    <div class="feature__title">ЕДА</div>
+    <div class="feature__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+  </div>
+  <div class="feature-image">
+    <div class="feature">
+      <div class="feature__title">Там есть мост дьявола</div>
+      <div class="feature__number">№2</div>
+      <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+    </div>
+    <div class="feature-image__picture">
+      <img src="#" alt="" class="feature-image__photo">
+    </div>
+  </div>
+  <div class="feature feature--gray">
+    <div class="feature__title">Небольшая площадь</div>
+    <div class="feature__number">№3</div>
+    <div class="feature__description">Вce интересные места находятся очень близко</div>
+  </div>
+  <div class="feature feature--gray">
+    <div class="feature__title">Красивая дорога</div>
+    <div class="feature__number">№4</div>
+    <div class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно</div>
+  </div>
+  <div class="feature feature--gray">
+    <div class="feature__title">Мало туристов</div>
+    <div class="feature__number">№5</div>
+    <div class="feature__description">Большинство едет в гранд каньон и толпится там</div>
+  </div>
+  <section class="page-content__finder">
+    <div class="page-content__description">
+      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+    </div>
+    <a href="#" class="page-content__button button">Найти гостиницу</a>
+  </section>
+  <div class="map"></div>
+</main>
+<footer class="page-footer">
+  <p class="page-footer__tag">#visitsedona</p>
+  <!--
+  Если мы захотим сделать этот блок переиспользуемым, может стоит его выделить в .social вместо хардкода его на футер .page-footer__social ?
+  -->
+  <section class="page-footer__social">
+    <ul class="page-footer__list">
+      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--twitter">twitter</a></li>
+      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--facebook">facebook</a></li>
+      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--vk">vk</a></li>
+    </ul>
+  </section>
+  <!--
+  Вот в этом месте как лучше сделать?
+  Следуя БЭМ, желательно не создавать таких вот элементов элементов через "-", но page-footer__link уже используется выше для соц.сетей
+  Что вообще в таких ситуациях делать? Выносить все в отдельный блок (например, .copyrights) или есть другие варианты?
+  -->
+  <div class="page-footer__copyrights">
+    <span class="page-footer__author">Разработано</span>
+    <a href="#" class="page-footer__author-link">
+      <img src="" class="page-footer__author-image">
+    </a>
+  </div>
+</footer>
+</body>
 </html>
