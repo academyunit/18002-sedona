@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
@@ -32,9 +33,6 @@
     <h2 class="page-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-content__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
   </section>
-  <!--
-  Вот этому всему (всем .feature) обертка может еще нужна дополнительная?
-  -->
   <div class="feature-image">
     <div class="feature">
       <div class="feature__title">Настоящий городок</div>
@@ -91,26 +89,20 @@
   <div class="map"></div>
 </main>
 <footer class="page-footer">
-  <p class="page-footer__tag">#visitsedona</p>
-  <!--
-  Если мы захотим сделать этот блок переиспользуемым, может стоит его выделить в .social вместо хардкода его на футер .page-footer__social ?
-  -->
-  <section class="page-footer__social">
-    <ul class="page-footer__list">
-      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--twitter">twitter</a></li>
-      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--facebook">facebook</a></li>
-      <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--vk">vk</a></li>
+  <p class="tag">
+    <a href="#" class="tag__link">#visitsedona</a>
+  </p>
+  <section class="social">
+    <ul class="social__list">
+      <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+      <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
     </ul>
   </section>
-  <!--
-  Вот в этом месте как лучше сделать?
-  Следуя БЭМ, желательно не создавать таких вот элементов элементов через "-", но page-footer__link уже используется выше для соц.сетей
-  Что вообще в таких ситуациях делать? Выносить все в отдельный блок (например, .copyrights) или есть другие варианты?
-  -->
-  <div class="page-footer__copyrights">
-    <span class="page-footer__author">Разработано</span>
-    <a href="#" class="page-footer__author-link">
-      <img src="" class="page-footer__author-image">
+  <div class="copyrights">
+    <span class="copyrights__author">Разработано</span>
+    <a href="#" class="copyrights__link">
+      <img src="" class="copyrights__image">
     </a>
   </div>
 </footer>
