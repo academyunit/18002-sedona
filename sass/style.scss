@@ -1,5 +1,10 @@
 @import 'normalize';
 
+@import 'variables';
+@import 'mixins';
+
+@import 'global';
+
 @import 'page-header';
 @import 'logo';
 @import 'navigation';
@@ -7,6 +12,7 @@
 @import 'page-content';
 @import 'feature';
 @import 'feature-image';
+@import 'finder';
 @import 'map';
 
 @import 'page-footer';

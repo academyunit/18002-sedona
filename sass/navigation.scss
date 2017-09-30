@@ -1,0 +1,75 @@
+.navigation {
+
+  background: #81b3d2;
+
+  @include show-outline(green);
+
+  &__list {
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    font-size: 18px;
+    line-height: 40px;
+
+    text-transform: uppercase;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__sandwich {
+    position: relative;
+
+    width: 100%;
+    height: 56px;
+
+    background: white;
+  }
+
+  &__sandwich-control {
+    position: absolute;
+    top: 1px;
+    right: 0;
+
+    border: none;
+    width: 64px;
+    height: 56px;
+
+    background: none;
+
+    font-size: 0;
+
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      right: 22px;
+
+      width: 24px;
+      height: 4px;
+
+      background-color: #81b3d2;
+
+      box-shadow:
+        0 -8px 0 0 #81b3d2,
+        0 8px 0 0 #81b3d2
+        ;
+
+      content: '';
+    }
+  }
+}

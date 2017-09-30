@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- @todo-s: refactor this header. Looks like it should have a toggle button instead of two separate ones :\ -->
 <header class="page-header">
   <div class="logo">
     <a href="#" class="logo__link">
@@ -14,18 +15,20 @@
   </div>
   <nav class="navigation">
     <div class="navigation__wrapper">
-      <button class="navigation__close button">Закрыть</button>
+      <button class="navigation__close">Закрыть</button>
       <ul class="navigation__list">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a></li>
       </ul>
-      <button class="navigation__sandwich">Открыть/закрыть</button>
+      <div class="navigation__sandwich">
+        <button class="navigation__sandwich-control">Открыть/закрыть</button>
+      </div>
     </div>
   </nav>
   <div class="page-header__legend">
-    <p class="page-header__brand">SEDONA</p>
+    <img class="page-header__text" src="/img/text-sedona-index.svg">
   </div>
 </header>
 <main class="page-content">
@@ -33,14 +36,14 @@
     <h2 class="page-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-content__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
   </section>
-  <div class="feature-image">
+  <div class="feature-image feature-image--triangled">
     <div class="feature">
       <div class="feature__title">Настоящий городок</div>
       <div class="feature__number">№1</div>
       <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
     </div>
     <div class="feature-image__picture">
-      <img src="#" alt="" class="feature-image__photo">
+      <img src="http://placehold.it/320x260" alt="" class="feature-image__photo">
     </div>
   </div>
   <div class="feature feature--apartments">
@@ -62,7 +65,7 @@
       <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
     </div>
     <div class="feature-image__picture">
-      <img src="#" alt="" class="feature-image__photo">
+      <img src="http://placehold.it/320x260" alt="" class="feature-image__photo">
     </div>
   </div>
   <div class="feature feature--gray">
@@ -80,13 +83,16 @@
     <div class="feature__number">№5</div>
     <div class="feature__description">Большинство едет в гранд каньон и толпится там</div>
   </div>
-  <section class="page-content__finder">
-    <div class="page-content__description">
+  <section class="finder">
+    <b class="finder__title">Заинтересовались?</b>
+    <div class="finder__description">
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
     </div>
     <a href="#" class="page-content__button button">Найти гостиницу</a>
   </section>
-  <div class="map"></div>
+  <div class="map">
+    <img src="http://placehold.it/320x350" alt="" class="map__placeholder">
+  </div>
 </main>
 <footer class="page-footer">
   <p class="tag">
@@ -102,9 +108,10 @@
   <div class="copyrights">
     <span class="copyrights__author">Разработано</span>
     <a href="#" class="copyrights__link">
-      <img src="" class="copyrights__image">
+      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

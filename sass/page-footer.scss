@@ -1,0 +1,5 @@
+.page-footer {
+  width: $mobile-width;
+
+  @include show-outline(red);
+}
