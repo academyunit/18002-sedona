@@ -40,67 +40,81 @@
     <form action="http://echo.htmlacademy.ru" method="post">
       <fieldset class="form__group">
         <legend class="form__legend">Представьтесь</legend>
-        <label>
+        <label class="form__label">
           Имя<sup>*</sup>: <input class="form__text" type="text" name="name" value="Петр">
         </label>
-        <label>
+        <label class="form__label">
           Фамилия<sup>*</sup>: <input class="form__text" type="text" name="surname" value="Иванов">
         </label>
-        <label>
+        <label class="form__label">
           Отчество<sup>*</sup>: <input class="form__text" type="text" name="middle_name" value="Александрович">
         </label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Контактная инаформация</legend>
-        <label>
+        <label class="form__label form__label--phone">
           Контактный телефон<sup>*</sup>:
           <br>
-          <input class="form__text" type="text" name="phone" value="" placeholder="Введите телефон">
+          <input class="form__text form__text--phone" type="text" name="phone" value="" placeholder="Введите телефон">
         </label>
-        <label>
+        <label class="form__label form__label--email">
           Электронная почта<sup>*</sup>:
           <br>
-          <input class="form__text" type="text" name="phone" value="" placeholder="Введите e-mail">
+          <input class="form__text form__text--email" type="text" name="phone" value="" placeholder="Введите e-mail">
         </label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Ваше общее впечатление</legend>
-        <input type="radio" class="form__radio" name="rating" id="rating_1" value="1" checked>
-        <label for="rating_1">
-          Скорее положительное
-        </label>
-        <input type="radio" class="form__radio" name="rating" id="rating_2" value="2">
-        <label for="rating_2">
-          Скорее отрицательный
-        </label>
-        <input type="radio" class="form__radio" name="rating" id="rating_3" value="3">
-        <label for="rating_3">
-          Затрудняюсь ответить
-        </label>
+        <div class="form__control">
+          <input type="radio" class="form__radio visually-hidden" name="rating" id="rating_1" value="1" checked>
+          <label class="form__label form__label--radio" for="rating_1">
+            Скорее положительное
+          </label>
+        </div>
+        <div class="form__control">
+          <input type="radio" class="form__radio visually-hidden" name="rating" id="rating_2" value="2">
+          <label class="form__label form__label--radio" for="rating_2">
+            Скорее отрицательный
+          </label>
+        </div>
+        <div class="form__control">
+          <input type="radio" class="form__radio visually-hidden" name="rating" id="rating_3" value="3">
+          <label class="form__label form__label--radio" for="rating_3">
+            Затрудняюсь ответить
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Посещенные достопримечательности:</legend>
-        <input type="text" class="form__checkbox" name="places" id="place_1" value="1" checked>
-        <label for="place_1">
-          Мост Дьявола
-        </label>
-        <input type="text" class="form__checkbox" name="places" id="place_2" value="2" checked>
-        <label for="place_2">
-          Слайд-парк
-        </label>
-        <input type="text" class="form__checkbox" name="places" id="place_3" value="3">
-        <label for="place_3">
-          Гора-Колокол
-        </label>
-        <input type="text" class="form__checkbox" name="places" id="place_4" value="4" checked>
-        <label for="place_4">
-          Красные скалы
-        </label>
+        <div class="form__control">
+          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_1" value="1" checked>
+          <label class="form__label form__label--checkbox" for="place_1">
+            Мост Дьявола
+          </label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_2" value="2" checked>
+          <label class="form__label form__label--checkbox" for="place_2">
+            Слайд-парк
+          </label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_3" value="3">
+          <label class="form__label form__label--checkbox" for="place_3">
+            Гора-Колокол
+          </label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_4" value="4" checked>
+          <label class="form__label form__label--checkbox" for="place_4">
+            Красные скалы
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Опишите свои эмоции:</legend>
-        <label>
-          <textarea name="emotions" id="emotions" cols="30" rows="10" class="form-area"></textarea>
+        <label class="form__label">
+          <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10"></textarea>
         </label>
       </fieldset>
       <button class="form__button button" type="submit">Отправить отзыв</button>

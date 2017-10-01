@@ -1,0 +1,155 @@
+.form {
+
+  &__group {
+    border: none;
+  }
+
+  &__control {
+    margin-bottom: 20px;
+  }
+
+  &__legend {
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 26px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
+  &__label {
+    display: inline-block;
+
+    min-height: 60px;
+
+    font-size: 14px;
+    line-height: 26px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &--radio,
+    &--checkbox
+    {
+      padding-left: 70px;
+      position: relative;
+
+      font-weight: bolder;
+      text-transform: none;
+    }
+
+    &--radio::before,
+    &--radio::after,
+    &--checkbox::before,
+    &--checkbox::after
+    {
+      position: absolute;
+      top: -15px;
+      left: 0;
+
+      background-color: #f2f2f2;
+      content: "";
+    }
+
+    &--radio::before,
+    &--radio::after {
+      border-radius: 50%;
+    }
+
+    &--checkbox::before,
+    &--checkbox::after {
+      border-radius: 5%;
+    }
+
+    &--radio::before,
+    &--checkbox::before
+    {
+      width: 60px;
+      height: 60px;
+    }
+
+    &--radio::after,
+    &--checkbox::after
+    {
+      display: none;
+
+      z-index: 2;
+    }
+
+    &--radio::after {
+      top: 3px;
+      left: 17px;
+
+      width: 23px;
+      height: 23px;
+
+      background: black;
+    }
+
+    &--checkbox::after {
+      width: 60px;
+      height: 60px;
+    }
+
+    input[type="radio"]:checked + &--radio::after
+    {
+      display: block;
+    }
+
+    input[type="checkbox"]:checked + &--checkbox::after {
+      display: block;
+
+      top: 10px;
+      left: 18px;
+
+      background-color: transparent;
+      background-image: url("/img/icon-tick.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text,
+  &__textarea
+  {
+    width: 228px;
+    height: 58px;
+    border: none;
+    padding: 20px;
+
+    background: #f2f2f2;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__text--phone,
+  &__text--email {
+    position: relative;
+
+    padding-right: 60px;
+
+    background-repeat: no-repeat;
+    background-position: 189px;
+  }
+
+  &__text--phone {
+    background-image: url("/img/icon-phone.svg");
+  }
+
+  &__text--email {
+    background-image: url("/img/icon-mail.svg");
+  }
+
+  &__textarea {
+    min-width: 280px;
+    min-height: 160px;
+  }
+
+  &__button {
+
+    width: 280px;
+    height: 60px;
+  }
+}

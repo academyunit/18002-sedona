@@ -1,4 +1,9 @@
-* {
+/* Safe inheritance */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -33,4 +38,15 @@ body {
 
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
