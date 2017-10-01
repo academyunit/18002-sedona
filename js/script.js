@@ -3,14 +3,21 @@ document.addEventListener('DOMContentLoaded', (e) => {
      * Menu show/hide functionality.
      */
     (() => {
-        let mobileMenu = document.querySelector('.navigation__list');
-        let sandwichButton = document.querySelector('.navigation__sandwich-control');
-
-        if (sandwichButton && mobileMenu) {
-            sandwichButton.addEventListener('click', (e) => {
-                mobileMenu.classList.toggle('navigation__list--show');
-            });
+        const mobileMenu = document.querySelector('.js-navigation');
+        if(!mobileMenu) {
+            console.log('Main menu\'s selector is not found! Check your DOM tree!');
+            return;
         }
+
+        const sandwichButton = document.querySelector('.navigation__sandwich-control');
+        if (!sandwichButton) {
+            console.log('Main menu\'s sandwich selector is not found! Check your DOM tree!');
+            return;
+        }
+
+        sandwichButton.addEventListener('click', (e) => {
+            mobileMenu.classList.toggle('navigation__list--show');
+        });
     })();
 
     /**
@@ -19,9 +26,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
      * @type {Element}
      */
     (() => {
-        const tourProgressBarContainer = document.querySelector('.tour__bar');
-        const tourProgressBar = document.querySelector('.tour__line');
-        const tourProgressBarIndicator = document.querySelector('.tour__indicator');
+        const tourProgressBarContainer = document.querySelector('.js-tour');
+        if (!tourProgressBarContainer) {
+            console.log('Progress bar\'s selector is not found! Check your DOM tree!');
+            return;
+        }
+
+        const tourProgressBar = tourProgressBarContainer.querySelector('.tour__line');
+        const tourProgressBarIndicator = tourProgressBarContainer.querySelector('.tour__indicator');
 
         if (tourProgressBarContainer && tourProgressBarIndicator) {
             tourProgressBarContainer.addEventListener('mousedown', (e) => {
@@ -113,8 +125,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
              * @returns {number}
              */
             function getCoordinate(coordinate) {
-                let parentContainerCoordinates = tourProgressBar.getBoundingClientRect();
-                let indicatorHalfSize = (parseInt(tourProgressBarIndicator.style.width) / 2);
+                const parentContainerCoordinates = tourProgressBar.getBoundingClientRect();
+                const indicatorHalfSize = (parseInt(tourProgressBarIndicator.style.width) / 2);
 
                 return (coordinate - parseInt(parentContainerCoordinates.left) - indicatorHalfSize);
             }
