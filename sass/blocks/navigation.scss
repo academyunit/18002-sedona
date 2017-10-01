@@ -17,7 +17,7 @@
 
   text-transform: uppercase;
 
-  background: #81b3d2;
+  background: $mainColor;
 }
 
 .navigation__list--show {
@@ -70,10 +70,10 @@
     width: 24px;
     height: 4px;
 
-    background-color: #81b3d2;
+    background-color: $mainColor;
 
-    box-shadow: 0 -8px 0 0 #81b3d2,
-      0 8px 0 0 #81b3d2;
+    box-shadow: 0 -8px 0 0 $mainColor,
+      0 8px 0 0 $mainColor;
 
     content: "";
   }

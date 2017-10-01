@@ -1,5 +1,5 @@
 .page-content {
-  width: $mobile-width;
+  width: $mobileWidth;
   margin-bottom: 40px;
 
   @include show-outline(red);
@@ -13,7 +13,7 @@
 }
 
 .page-content__description {
-  font-size: 14px;
+  font-size: $fontSizeStandard;
   line-height: 26px;
 
   text-align: center;

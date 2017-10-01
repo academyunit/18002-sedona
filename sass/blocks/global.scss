@@ -15,7 +15,7 @@ body {
 
   font-family: "PT Sans", "Verdana", "Times New Roman", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: $fontSizeStandard;
   line-height: 24px;
 
   color: black;
@@ -30,7 +30,7 @@ body {
   width: 280px;
   min-height: 59px;
 
-  background: #81b3d2;
+  background: $mainColor;
   color: white;
 
   font-weight: normal;
