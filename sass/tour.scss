@@ -24,14 +24,14 @@
     width: 320px;
     height: 270px;
   }
-  
+
   &__video {
     width: 320px;
     height: 203px;
 
     background: gray url("/img/video-mobile@1x.jpg") no-repeat;
   }
-  
+
   &__bar {
     position: relative;
 
@@ -82,20 +82,19 @@
 
     border: none;
     background: #f2f2f2 no-repeat;
-    
+
     &--replay {
       background-image: url("/img/icon-video-replay.svg");
     }
-    
+
     &--subtitles {
       width: 36px;
 
       background-image: url("/img/icon-video-subtitles.svg");
     }
-    
+
     &--fullscreen {
       background-image: url("/img/icon-video-fullscreen.svg");
     }
   }
-
 }

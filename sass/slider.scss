@@ -1,8 +1,6 @@
 .slider {
-
   &__title,
-  &__description
-  {
+  &__description {
     margin: 0;
     padding: 0;
 
@@ -11,8 +9,7 @@
   }
 
   &__title,
-  &__total-likes
-  {
+  &__total-likes {
     font-weight: bolder;
     text-transform: uppercase;
   }

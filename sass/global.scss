@@ -1,5 +1,7 @@
 /* Safe inheritance */
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -27,7 +29,6 @@ body {
 
   width: 280px;
   min-height: 59px;
-
 
   background: #81b3d2;
   color: white;

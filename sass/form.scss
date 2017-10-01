@@ -1,5 +1,4 @@
 .form {
-
   &__group {
     border: none;
   }
@@ -31,8 +30,7 @@
     cursor: pointer;
 
     &--radio,
-    &--checkbox
-    {
+    &--checkbox {
       padding-left: 70px;
       position: relative;
 
@@ -43,8 +41,7 @@
     &--radio::before,
     &--radio::after,
     &--checkbox::before,
-    &--checkbox::after
-    {
+    &--checkbox::after {
       position: absolute;
       top: -15px;
       left: 0;
@@ -64,15 +61,13 @@
     }
 
     &--radio::before,
-    &--checkbox::before
-    {
+    &--checkbox::before {
       width: 60px;
       height: 60px;
     }
 
     &--radio::after,
-    &--checkbox::after
-    {
+    &--checkbox::after {
       display: none;
 
       z-index: 2;
@@ -93,8 +88,7 @@
       height: 60px;
     }
 
-    input[type="radio"]:checked + &--radio::after
-    {
+    input[type="radio"]:checked + &--radio::after {
       display: block;
     }
 
@@ -111,8 +105,7 @@
   }
 
   &__text,
-  &__textarea
-  {
+  &__textarea {
     width: 228px;
     height: 58px;
     border: none;
