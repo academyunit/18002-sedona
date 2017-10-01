@@ -1,5 +1,5 @@
 .navigation {
-  background: #81b3d2;
+  padding-bottom: 56px;
 
   @include show-outline(green);
 }
@@ -16,6 +16,8 @@
   line-height: 40px;
 
   text-transform: uppercase;
+
+  background: #81b3d2;
 }
 
 .navigation__list--show {
@@ -31,6 +33,12 @@
   text-decoration: none;
 }
 
+/*
+@todo-s: refactor this block. should act like a toggle button since this point.
+
+- differentiate between open/close states (display sandwich/close icon)
+- implement both using CSS
+*/
 .navigation__sandwich {
   position: relative;
 

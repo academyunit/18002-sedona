@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- @todo-s: refactor this header. Looks like it should have a toggle button instead of two separate ones :\ -->
 <header class="page-header page-header--inner-page">
   <div class="logo">
     <a href="#" class="logo__link">
@@ -14,17 +13,14 @@
     </a>
   </div>
   <nav class="navigation">
+    <button class="navigation__sandwich-control">Открыть/Закрыть</button>
     <div class="navigation__wrapper">
-      <button class="navigation__close">Закрыть</button>
-      <ul class="navigation__list js-navigation">
+      <ul class="navigation__list navigation__list--show js-navigation">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a></li>
       </ul>
-      <div class="navigation__sandwich">
-        <button class="navigation__sandwich-control">Открыть/закрыть</button>
-      </div>
     </div>
   </nav>
   <div class="page-header__legend">
