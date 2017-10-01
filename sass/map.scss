@@ -1,3 +1,11 @@
 .map {
-  /** ! **/
+  &__container {
+    position: relative;
+  }
+
+  &__marker {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
 }
