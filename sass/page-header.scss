@@ -13,9 +13,9 @@
     width: 320px;
     height: 26px;
 
-    background: transparent url(/img/bg-intro-triangle-mobile.svg);
+    background: transparent url("/img/bg-intro-triangle-mobile.svg");
 
-    content: '';
+    content: "";
   }
 
   &__legend {
@@ -24,10 +24,10 @@
     width: 320px;
     height: 390px;
 
-    background: white url('/img/bg-back-mobile@1x.jpg') 50% 50% no-repeat;
+    background: white url("/img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
   }
 
-  &__text{
+  &__text {
     position: absolute;
     top: 26%;
 

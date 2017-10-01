@@ -10,8 +10,7 @@
   }
 
   &__number,
-  &__description
-  {
+  &__description {
     font-size: 14px;
     line-height: 21px;
   }
@@ -22,8 +21,7 @@
 
   &__title,
   &__number,
-  &__description
-  {
+  &__description {
     text-align: center;
     text-transform: uppercase;
 
@@ -36,8 +34,7 @@
 
   &--apartments,
   &--souvenirs,
-  &--food
-  {
+  &--food {
     margin: 0;
     padding: 0;
 
@@ -51,8 +48,7 @@
   &--souvenirs &__title,
   &--souvenirs &__description,
   &--food &__title,
-  &--food &__description
-  {
+  &--food &__description {
     text-align: left;
   }
 }
@@ -66,5 +62,4 @@
     width: 320px;
     height: 260px;
   }
-
 }
