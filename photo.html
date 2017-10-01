@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<!-- @todo-s: refactor this header. Looks like it should have a toggle button instead of two separate ones :\ -->
+<header class="page-header page-header--inner-page">
   <div class="logo">
     <a href="#" class="logo__link">
       <img src="#" alt="#" class="logo__image">
@@ -13,31 +15,33 @@
   </div>
   <nav class="navigation">
     <div class="navigation__wrapper">
-      <button class="navigation__close button">Закрыть</button>
+      <button class="navigation__close">Закрыть</button>
       <ul class="navigation__list">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a></li>
       </ul>
-      <button class="navigation__sandwich">Открыть/закрыть</button>
+      <div class="navigation__sandwich">
+        <button class="navigation__sandwich-control">Открыть/закрыть</button>
+      </div>
     </div>
   </nav>
   <div class="page-header__legend">
-    <p class="page-header__brand">SEDONA</p>
+    <img class="page-header__text" src="/img/text-sedona-index.svg">
   </div>
 </header>
 <main class="page-content">
-  <section class="page-content__category category"> <!-- ? -->
-    <h2 class="category__title">Фото и видео</h2>
-    <p class="category__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+  <section class="page-content__category">
+    <h2 class="page-content__title">Фото и видео</h2>
+    <p class="page-content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
   </section>
   <section class="slider">
     <div class="slider__list">
       <div class="slider__item">
         <div class="slider__image">
-          <img src="#" alt="#" class="slider__photo">
+          <img src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
         </div>
         <h3 class="slider__title">Неродные просторы</h3>
         <p class="slider__description">Автор фото: Борис</p>
@@ -48,7 +52,7 @@
       </div>
       <div class="slider__item">
         <div class="slider__image">
-          <img src="#" alt="#" class="slider__photo">
+          <img src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
         </div>
         <h3 class="slider__title">Местная растительность</h3>
         <p class="slider__description">Автор фото: Сергей</p>
@@ -59,7 +63,7 @@
       </div>
       <div class="slider__item">
         <div class="slider__image">
-          <img src="#" alt="#" class="slider__photo">
+          <img src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
         </div>
         <h3 class="slider__title">Дорога на север</h3>
         <p class="slider__description">Автор фото: Петр</p>
@@ -70,7 +74,7 @@
       </div>
       <div class="slider__item">
         <div class="slider__image">
-          <img src="#" alt="#" class="slider__photo">
+          <img src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
         </div>
         <h3 class="slider__title">Мост дьявола</h3>
         <p class="slider__description">Автор фото: Антон</p>
@@ -92,9 +96,9 @@
         </div>
       </div>
       <div class="tour__controls">
-        <div class="tour__control tour__control--rewind"></div>
-        <div class="tour__control tour__control--subtitles"></div>
-        <div class="tour__control tour__control--maximize"></div>
+        <button class="tour__control tour__control--replay">Повтор видео</button>
+        <button class="tour__control tour__control--subtitles">Включить субтитры</button>
+        <button class="tour__control tour__control--fullscreen">Полноэкранный режим</button>
       </div>
     </div>
   </section>
@@ -113,9 +117,10 @@
   <div class="copyrights">
     <span class="copyrights__author">Разработано</span>
     <a href="#" class="copyrights__link">
-      <img src="" class="copyrights__image">
+      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
     </a>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.slider {
+
+  &__title,
+  &__description
+  {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__title,
+  &__total-likes
+  {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    color: #333333;
+  }
+}
