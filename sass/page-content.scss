@@ -3,23 +3,23 @@
   margin-bottom: 40px;
 
   @include show-outline(red);
+}
 
-  &__title {
-    font-size: 18px;
-    line-height: 26px;
+.page-content__title {
+  font-size: 18px;
+  line-height: 26px;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  &__description {
-    font-size: 14px;
-    line-height: 26px;
+.page-content__description {
+  font-size: 14px;
+  line-height: 26px;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  &__title,
-  &__description {
-    text-transform: uppercase;
-  }
+.page-content__title,
+.page-content__description {
+  text-transform: uppercase;
 }

@@ -5,14 +5,14 @@
   padding: 0;
 
   text-align: center;
+}
 
-  &__link {
-    font-weight: bolder;
-    font-size: 21px;
-    line-height: 26px;
+.tag__link {
+  font-weight: bolder;
+  font-size: 21px;
+  line-height: 26px;
 
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }

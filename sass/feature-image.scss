@@ -1,3 +1,9 @@
-.feature-item {
-  @include show-outline(green);
+.feature-image {
+  background: #81b3d2;
+  color: white;
+}
+
+.feature-image__picture {
+  width: 320px;
+  height: 260px;
 }

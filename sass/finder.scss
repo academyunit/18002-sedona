@@ -1,28 +1,27 @@
 .finder {
-
   margin-top: 30px;
   margin-bottom: 50px;
 
   text-align: center;
+}
 
-  &__title {
-    display: block;
+.finder__title {
+  display: block;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    font-size: 21px;
-    line-height: 26px;
-  }
+  font-size: 21px;
+  line-height: 26px;
+}
 
-  &__description {
-    margin-bottom: 40px;
+.finder__description {
+  margin-bottom: 40px;
 
-    font-size: 14px;
-    line-height: 24px;
-  }
+  font-size: 14px;
+  line-height: 24px;
+}
 
-  &__title,
-  &__description {
-    text-transform: uppercase;
-  }
+.finder__title,
+.finder__description {
+  text-transform: uppercase;
 }

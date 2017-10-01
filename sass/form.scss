@@ -1,148 +1,146 @@
-.form {
-  &__group {
-    border: none;
-  }
+.form__group {
+  border: none;
+}
 
-  &__control {
-    margin-bottom: 20px;
-  }
+.form__control {
+  margin-bottom: 20px;
+}
 
-  &__legend {
-    font-weight: bolder;
-    font-size: 18px;
-    line-height: 26px;
+.form__legend {
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 26px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  &__label {
-    display: inline-block;
+.form__label {
+  display: inline-block;
 
-    min-height: 60px;
+  min-height: 60px;
 
-    font-size: 14px;
-    line-height: 26px;
+  font-size: 14px;
+  line-height: 26px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    cursor: pointer;
+  cursor: pointer;
+}
 
-    &--radio,
-    &--checkbox {
-      padding-left: 70px;
-      position: relative;
 
-      font-weight: bolder;
-      text-transform: none;
-    }
+.form__label--radio,
+.form__label--checkbox {
+  padding-left: 70px;
+  position: relative;
 
-    &--radio::before,
-    &--radio::after,
-    &--checkbox::before,
-    &--checkbox::after {
-      position: absolute;
-      top: -15px;
-      left: 0;
+  font-weight: bolder;
+  text-transform: none;
+}
 
-      background-color: #f2f2f2;
-      content: "";
-    }
+.form__label--radio::before,
+.form__label--radio::after,
+.form__label--checkbox::before,
+.form__label--checkbox::after {
+  position: absolute;
+  top: -15px;
+  left: 0;
 
-    &--radio::before,
-    &--radio::after {
-      border-radius: 50%;
-    }
+  background-color: #f2f2f2;
+  content: "";
+}
 
-    &--checkbox::before,
-    &--checkbox::after {
-      border-radius: 5%;
-    }
+.form__label--radio::before,
+.form__label--radio::after {
+  border-radius: 50%;
+}
 
-    &--radio::before,
-    &--checkbox::before {
-      width: 60px;
-      height: 60px;
-    }
+.form__label--checkbox::before,
+.form__label--checkbox::after {
+  border-radius: 5%;
+}
 
-    &--radio::after,
-    &--checkbox::after {
-      display: none;
+.form__label--radio::before,
+.form__label--checkbox::before {
+  width: 60px;
+  height: 60px;
+}
 
-      z-index: 2;
-    }
+.form__label--radio::after,
+.form__label--checkbox::after {
+  display: none;
 
-    &--radio::after {
-      top: 3px;
-      left: 17px;
+  z-index: 2;
+}
 
-      width: 23px;
-      height: 23px;
+.form__label--radio::after {
+  top: 3px;
+  left: 17px;
 
-      background: black;
-    }
+  width: 23px;
+  height: 23px;
 
-    &--checkbox::after {
-      width: 60px;
-      height: 60px;
-    }
+  background: black;
+}
 
-    input[type="radio"]:checked + &--radio::after {
-      display: block;
-    }
+.form__label--checkbox::after {
+  width: 60px;
+  height: 60px;
+}
 
-    input[type="checkbox"]:checked + &--checkbox::after {
-      display: block;
+input[type="radio"]:checked + .form__label--radio::after {
+  display: block;
+}
 
-      top: 10px;
-      left: 18px;
+input[type="checkbox"]:checked + .form__label--checkbox::after {
+  display: block;
 
-      background-color: transparent;
-      background-image: url("/img/icon-tick.svg");
-      background-repeat: no-repeat;
-    }
-  }
+  top: 10px;
+  left: 18px;
 
-  &__text,
-  &__textarea {
-    width: 228px;
-    height: 58px;
-    border: none;
-    padding: 20px;
+  background-color: transparent;
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
 
-    background: #f2f2f2;
+.form__text,
+.form__textarea {
+  width: 228px;
+  height: 58px;
+  border: none;
+  padding: 20px;
 
-    font-size: 18px;
-    line-height: 26px;
-  }
+  background: #f2f2f2;
 
-  &__text--phone,
-  &__text--email {
-    position: relative;
+  font-size: 18px;
+  line-height: 26px;
+}
 
-    padding-right: 60px;
+.form__text--phone,
+.form__text--email {
+  position: relative;
 
-    background-repeat: no-repeat;
-    background-position: 189px;
-  }
+  padding-right: 60px;
 
-  &__text--phone {
-    background-image: url("/img/icon-phone.svg");
-  }
+  background-repeat: no-repeat;
+  background-position: 189px;
+}
 
-  &__text--email {
-    background-image: url("/img/icon-mail.svg");
-  }
+.form__text--phone {
+  background-image: url("/img/icon-phone.svg");
+}
 
-  &__textarea {
-    min-width: 280px;
-    min-height: 160px;
-  }
+.form__text--email {
+  background-image: url("/img/icon-mail.svg");
+}
 
-  &__button {
+.form__textarea {
+  min-width: 280px;
+  min-height: 160px;
+}
 
-    width: 280px;
-    height: 60px;
-  }
+.form__button {
+  width: 280px;
+  height: 60px;
 }
