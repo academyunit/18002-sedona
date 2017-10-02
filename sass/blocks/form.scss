@@ -89,11 +89,11 @@
   height: 60px;
 }
 
-input[type="radio"]:checked + .form__label--radio::after {
+.form__radio:checked + .form__label--radio::after {
   display: block;
 }
 
-input[type="checkbox"]:checked + .form__label--checkbox::after {
+.form__checkbox:checked + .form__label--checkbox::after {
   display: block;
 
   top: 10px;
