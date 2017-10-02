@@ -1,0 +1,27 @@
+.finder {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.finder__title {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.finder__description {
+  margin-bottom: 40px;
+
+  font-size: $fontSizeStandard;
+  line-height: 24px;
+}
+
+.finder__title,
+.finder__description {
+  text-transform: uppercase;
+}

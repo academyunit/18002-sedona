@@ -1,0 +1,99 @@
+.tour {
+  width: 320px;
+  height: 460px;
+}
+
+.tour__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.tour__description {
+  font-size: $fontSizeStandard;
+  line-height: 24px;
+
+  color: #333333;
+}
+
+.tour__title,
+.tour__description {
+  text-transform: uppercase;
+}
+
+.tour__player {
+  width: 320px;
+  height: 270px;
+}
+
+.tour__video {
+  width: 320px;
+  height: 203px;
+
+  background: gray url("/img/video-mobile@1x.jpg") no-repeat;
+}
+
+.tour__bar {
+  position: relative;
+
+  width: 283px;
+  height: 46px;
+  margin-top: -47px;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.tour__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 240px;
+  height: 4px;
+
+  transform: translate(-50%, -50%);
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tour__indicator {
+  width: 10px;
+  height: 10px;
+  margin-top: -3px;
+  margin-left: 14%;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+.tour__controls {
+  width: 283px;
+  height: 66px;
+
+  background: #f2f2f2;
+}
+
+.tour__control {
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  border: none;
+  background: #f2f2f2 no-repeat;
+}
+
+.tour__control--replay {
+  background-image: url("/img/icon-video-replay.svg");
+}
+
+.tour__control--subtitles {
+  width: 36px;
+
+  background-image: url("/img/icon-video-subtitles.svg");
+}
+
+.tour__control--fullscreen {
+  background-image: url("/img/icon-video-fullscreen.svg");
+}

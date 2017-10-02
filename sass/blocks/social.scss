@@ -1,0 +1,23 @@
+.social {
+  text-align: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__link {
+  display: inline-block;
+
+  width: 47px;
+  height: 47px;
+
+  background: $mainColor;
+}

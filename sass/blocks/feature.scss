@@ -1,0 +1,45 @@
+.feature {
+  @include show-outline(green);
+
+  padding: 40px 29px 40px 20px;
+}
+
+.feature__title {
+  font-weight: bolder;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature__number,
+.feature__description {
+  font-size: $fontSizeStandard;
+  line-height: 21px;
+}
+
+.feature--gray {
+  background: #eeeeee;
+}
+
+.feature__title,
+.feature__number,
+.feature__description {
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+}
+
+.feature__description {
+  margin-bottom: 0;
+}
+
+.feature--apartments,
+.feature--souvenirs,
+.feature--food {
+  margin: 0;
+  padding: 0;
+
+  margin-top: 21px;
+  margin-bottom: 15px;
+  padding-left: 70px;
+}

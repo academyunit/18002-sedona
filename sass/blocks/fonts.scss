@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bolder;
+  font-style: bolder;
+
+  src: url("/fonts/ptsans.woff") format("woff"),
+    url("/fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-style: bold;
+
+  src: url("/fonts/ptsans.woff") format("woff"),
+    url("/fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: lighter;
+  font-style: lighter;
+
+  src: url("/fonts/ptsans.woff") format("woff"),
+    url("/fonts/ptsans.woff2") format("woff2");
+}

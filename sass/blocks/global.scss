@@ -1,0 +1,53 @@
+/* Safe inheritance */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+
+  font-family: "PT Sans", "Verdana", "Times New Roman", sans-serif;
+  font-weight: normal;
+  font-size: $fontSizeStandard;
+  line-height: 24px;
+
+  color: black;
+  background: white;
+}
+
+.button {
+  display: inline-block;
+
+  padding: 20px 45px;
+
+  width: 280px;
+  min-height: 59px;
+
+  background: $mainColor;
+  color: white;
+
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

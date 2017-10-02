@@ -1,0 +1,25 @@
+.page-content {
+  width: $mobileWidth;
+  margin-bottom: 40px;
+
+  @include show-outline(red);
+}
+
+.page-content__title {
+  font-size: 18px;
+  line-height: 26px;
+
+  text-align: center;
+}
+
+.page-content__description {
+  font-size: $fontSizeStandard;
+  line-height: 26px;
+
+  text-align: center;
+}
+
+.page-content__title,
+.page-content__description {
+  text-transform: uppercase;
+}
