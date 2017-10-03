@@ -1,8 +1,11 @@
 .page-content {
-  width: $mobile-width;
   margin-bottom: 40px;
 
   @include show-outline(red);
+}
+
+.page-content__category {
+  display: block;
 }
 
 .page-content__title {

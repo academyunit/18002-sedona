@@ -23,17 +23,23 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__legend">
-    <img class="page-header__text" src="/img/text-sedona-index.svg">
-  </div>
 </header>
 <main class="page-content">
+  <div class="welcome">
+    <div class="welcome__wrapper">
+      <img class="welcome__legend" src="/img/text-sedona-index.svg">
+    </div>
+  </div>
   <section class="page-content__category">
     <h2 class="page-content__title">Оставьте свой отзыв</h2>
     <p class="page-content__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </section>
   <div class="page-content__feedback">
+    <!-- добавить сюда wrapper -->
     <form action="http://echo.htmlacademy.ru" method="post">
+      <!--
+      fieldset плохо дружит с flexbox. Что здесь првильнее будет сделать?
+      -->
       <fieldset class="form__group">
         <legend class="form__legend">Представьтесь</legend>
         <label class="form__label">
@@ -118,21 +124,27 @@
   </div>
 </main>
 <footer class="page-footer">
-  <p class="tag">
-    <a href="#" class="tag__link">#visitsedona</a>
-  </p>
+  <div class="tag">
+    <div class="tag__wrapper">
+      <a href="#" class="tag__link">#visitsedona</a>
+    </div>
+  </div>
   <section class="social">
-    <ul class="social__list">
-      <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
-    </ul>
+    <div class="social__wrapper">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
+      </ul>
+    </div>
   </section>
   <div class="copyrights">
-    <span class="copyrights__author">Разработано</span>
-    <a href="#" class="copyrights__link">
-      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
-    </a>
+    <div class="copyrights__wrapper">
+      <span class="copyrights__author">Разработано</span>
+      <a href="#" class="copyrights__link">
+        <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
+      </a>
+    </div>
   </div>
 </footer>
 <script src="js/script.js"></script>

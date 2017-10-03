@@ -1,44 +1,8 @@
 .page-header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 
-  width: $mobile-width;
+  position: relative;
 
   @include show-outline(red);
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-
-    width: 320px;
-    height: 26px;
-
-    background: transparent url("/img/bg-intro-triangle-mobile.svg");
-
-    content: "";
-  }
-}
-
-.page-header__legend {
-  position: relative;
-
-  width: 320px;
-  height: 390px;
-
-  background: white url("/img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
-}
-
-.page-header__text {
-  position: absolute;
-  top: 26%;
-
-  width: 100%;
-  height: 50%;
-}
-
-.page-header--inner-page .page-header__legend {
-  height: 160px;
-}
-
-.page-header--inner-page .logo {
-  bottom: 132px;
 }
