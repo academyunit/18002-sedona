@@ -1,4 +1,14 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 320px;
+}
+
 .form__group {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
@@ -7,6 +17,8 @@
 }
 
 .form__legend {
+  margin-bottom: 15px;
+
   font-weight: bolder;
   font-size: 18px;
   line-height: 26px;
@@ -106,7 +118,7 @@
 
 .form__text,
 .form__textarea {
-  width: 228px;
+  width: 194px;
   height: 58px;
   border: none;
   padding: 20px;
@@ -121,10 +133,12 @@
 .form__text--email {
   position: relative;
 
+  width: 280px;
+
   padding-right: 60px;
 
   background-repeat: no-repeat;
-  background-position: 189px;
+  background-position: 236px;
 }
 
 .form__text--phone {
@@ -143,4 +157,117 @@
 .form__button {
   width: 280px;
   height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 648px;
+  }
+
+  .form__group {
+    width: 324px;
+  }
+
+  .form__group:nth-of-type(1),
+  .form__group:nth-of-type(3)
+  {
+    width: 324px;
+  }
+
+  .form__group:nth-of-type(3) {
+    order: -1;
+  }
+
+  .form__group:nth-of-type(4)
+  {
+    flex-grow: 1;
+
+    width: 100%;
+  }
+
+  .form__group:last-of-type .form__label,
+  .form__group:last-of-type .form__textarea {
+    width: 647px;
+  }
+
+  .form__group-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 650px;
+  }
+
+  .form__label--phone,
+  .form__label--email,
+  .form__text--phone,
+  .form__text--email
+  {
+    width: 100%;
+  }
+
+  .form__text--phone,
+  .form__text--email {
+    background-position: 606px;
+  }
+
+  .form__group:nth-of-type(4) .form__group-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 485px;
+    margin: 0 auto;
+  }
+
+  .form__group:nth-of-type(4) .form__control {
+    width: 242px;
+  }
+
+  .form__label--checkbox {
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 960px;
+  }
+
+  .form__group,
+  .form__group:nth-of-type(1),
+  .form__group:nth-of-type(3)
+  {
+    width: 480px;
+  }
+
+  .form__group:last-of-type {
+    flex-grow: 1;
+
+    width: 100%;
+  }
+
+  .form__group-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    width: 960px;
+  }
+
+  .form__group:nth-of-type(2) .form__text--phone,
+  .form__group:nth-of-type(2) .form__text--email
+  {
+    width: 315px;
+  }
+
+  .form__group:nth-of-type(2) .form__group-wrapper,
+  .form__group:nth-of-type(4) .form__group-wrapper
+  {
+    justify-content: space-around;
+
+    width: 960px;
+  }
+
+  .form__group:nth-of-type(4) .form__control {
+    width: 198px;
+  }
 }

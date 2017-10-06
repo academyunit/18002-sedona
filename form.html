@@ -12,7 +12,7 @@
       <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
     </a>
   </div>
-  <nav class="navigation js-navigation">
+  <nav class="navigation navigation--show js-navigation">
     <button class="navigation__sandwich-control">Открыть/Закрыть</button>
     <div class="navigation__wrapper">
       <ul class="navigation__list">
@@ -35,11 +35,25 @@
     <p class="page-content__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </section>
   <div class="page-content__feedback">
-    <!-- добавить сюда wrapper -->
-    <form action="http://echo.htmlacademy.ru" method="post">
+    <!-- Нужно ли добавить сюда wrapper? -->
+    <form class="form" action="http://echo.htmlacademy.ru" method="post">
       <!--
       fieldset плохо дружит с flexbox. Что здесь првильнее будет сделать?
+
+      Я оставил fieldset и legend, обернул просто позиционируемый контент в доп. wrapper
       -->
+
+      <!--
+      Имеет ли смысл тут присвоить кажой группе контролов свой уникальный модификатор?
+      Чтобы было нечто вроде:
+      .form__group.form__group--personal
+      .form__group.form__group--contacts
+      .form__group.form__group--feedback
+      .form__group.form__group--places
+
+      В CSS очень неудобно их по номерам искать и легко забыть потом будет.
+      -->
+
       <fieldset class="form__group">
         <legend class="form__legend">Представьтесь</legend>
         <label class="form__label">
@@ -54,16 +68,18 @@
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Контактная инаформация</legend>
-        <label class="form__label form__label--phone">
-          Контактный телефон<sup>*</sup>:
-          <br>
-          <input class="form__text form__text--phone" type="text" name="phone" value="" placeholder="Введите телефон">
-        </label>
-        <label class="form__label form__label--email">
-          Электронная почта<sup>*</sup>:
-          <br>
-          <input class="form__text form__text--email" type="text" name="phone" value="" placeholder="Введите e-mail">
-        </label>
+        <div class="form__group-wrapper">
+          <label class="form__label form__label--phone">
+            Телефон<sup>*</sup>:
+            <br>
+            <input class="form__text form__text--phone" type="text" name="phone" value="" placeholder="Введите телефон">
+          </label>
+          <label class="form__label form__label--email">
+            Электронная почта<sup>*</sup>:
+            <br>
+            <input class="form__text form__text--email" type="text" name="phone" value="" placeholder="Введите e-mail">
+          </label>
+        </div>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Ваше общее впечатление</legend>
@@ -88,29 +104,31 @@
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__legend">Посещенные достопримечательности:</legend>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_1" value="1" checked>
-          <label class="form__label form__label--checkbox" for="place_1">
-            Мост Дьявола
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_2" value="2" checked>
-          <label class="form__label form__label--checkbox" for="place_2">
-            Слайд-парк
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_3" value="3">
-          <label class="form__label form__label--checkbox" for="place_3">
-            Гора-Колокол
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_4" value="4" checked>
-          <label class="form__label form__label--checkbox" for="place_4">
-            Красные скалы
-          </label>
+        <div class="form__group-wrapper">
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_1" value="1" checked>
+            <label class="form__label form__label--checkbox" for="place_1">
+              Мост Дьявола
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_2" value="2" checked>
+            <label class="form__label form__label--checkbox" for="place_2">
+              Слайд-парк
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_3" value="3">
+            <label class="form__label form__label--checkbox" for="place_3">
+              Гора-Колокол
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_4" value="4" checked>
+            <label class="form__label form__label--checkbox" for="place_4">
+              Красные скалы
+            </label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__group">

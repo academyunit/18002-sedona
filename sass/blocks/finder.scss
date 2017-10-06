@@ -25,3 +25,16 @@
 .finder__description {
   text-transform: uppercase;
 }
+
+.finder__wrapper {
+  display: block;
+
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .finder__wrapper{
+    width: 700px;
+  }
+}

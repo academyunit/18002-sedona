@@ -6,6 +6,9 @@
 
 .page-content__category {
   display: block;
+
+  margin: 0 auto;
+  width: 320px;
 }
 
 .page-content__title {
@@ -25,4 +28,28 @@
 .page-content__title,
 .page-content__description {
   text-transform: uppercase;
+}
+
+.page-content__feedback {
+  margin: 0 auto;
+  width: 320px;
+
+  @include show-outline(green);
+}
+
+@media (min-width: $tablet-width) {
+  .page-content__category {
+    width: 550px;
+    height: 197px;
+  }
+
+  .page-content__feedback {
+    width: 650px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__feedback {
+    width: 960px;
+  }
 }
