@@ -41,7 +41,6 @@
   cursor: pointer;
 }
 
-
 .form__label--radio,
 .form__label--checkbox {
   padding-left: 70px;
@@ -169,8 +168,7 @@
   }
 
   .form__group:nth-of-type(1),
-  .form__group:nth-of-type(3)
-  {
+  .form__group:nth-of-type(3) {
     width: 324px;
   }
 
@@ -178,8 +176,7 @@
     order: -1;
   }
 
-  .form__group:nth-of-type(4)
-  {
+  .form__group:nth-of-type(4) {
     flex-grow: 1;
 
     width: 100%;
@@ -200,8 +197,7 @@
   .form__label--phone,
   .form__label--email,
   .form__text--phone,
-  .form__text--email
-  {
+  .form__text--email {
     width: 100%;
   }
 
@@ -222,10 +218,6 @@
   .form__group:nth-of-type(4) .form__control {
     width: 242px;
   }
-
-  .form__label--checkbox {
-
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -235,8 +227,7 @@
 
   .form__group,
   .form__group:nth-of-type(1),
-  .form__group:nth-of-type(3)
-  {
+  .form__group:nth-of-type(3) {
     width: 480px;
   }
 
@@ -254,14 +245,12 @@
   }
 
   .form__group:nth-of-type(2) .form__text--phone,
-  .form__group:nth-of-type(2) .form__text--email
-  {
+  .form__group:nth-of-type(2) .form__text--email {
     width: 315px;
   }
 
   .form__group:nth-of-type(2) .form__group-wrapper,
-  .form__group:nth-of-type(4) .form__group-wrapper
-  {
+  .form__group:nth-of-type(4) .form__group-wrapper {
     justify-content: space-around;
 
     width: 960px;

@@ -16,13 +16,13 @@
     width: 100%;
   }
 
-  .feature-image--reversed .feature  {
+  .feature-image--reversed .feature {
     order: 2;
 
     width: 256px;
   }
 
-  .feature-image--reversed .feature-image__picture  {
+  .feature-image--reversed .feature-image__picture {
     width: 512px;
 
     @include show-outline(green);
@@ -54,14 +54,14 @@
     width: 100%;
   }
 
-  .feature-image--reversed .feature  {
+  .feature-image--reversed .feature {
     order: 2;
 
     width: 400px;
     height: 255px;
   }
 
-  .feature-image--reversed .feature-image__picture  {
+  .feature-image--reversed .feature-image__picture {
     width: 800px;
     height: 256px;
 

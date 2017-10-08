@@ -49,7 +49,6 @@
 
 @media (min-width: $desktop-width) {
   .welcome {
-
     @include show-outline(green);
 
     width: 1200px;

@@ -115,14 +115,12 @@
   }
 
   .tour__title,
-  .tour__description
-  {
+  .tour__description {
     text-align: center;
   }
 
   .tour__player,
-  .tour__video
-  {
+  .tour__video {
     width: 650px;
     height: 500px;
   }
@@ -156,7 +154,6 @@
   .tour__control {
     position: absolute;
     z-index: 3;
-
   }
 
   .tour__control--replay {
