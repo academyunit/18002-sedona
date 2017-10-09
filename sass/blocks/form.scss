@@ -33,7 +33,7 @@
 
   min-height: 60px;
 
-  font-size: $font-size-standard;
+  font-size: $base-font-size;
   line-height: 26px;
 
   text-transform: uppercase;
@@ -167,16 +167,16 @@
     width: 324px;
   }
 
-  .form__group:nth-of-type(1),
-  .form__group:nth-of-type(3) {
+  .form__group--personal,
+  .form__group--feedback {
     width: 324px;
   }
 
-  .form__group:nth-of-type(3) {
+  .form__group--feedback {
     order: -1;
   }
 
-  .form__group:nth-of-type(4) {
+  .form__group--places {
     flex-grow: 1;
 
     width: 100%;
@@ -206,7 +206,7 @@
     background-position: 606px;
   }
 
-  .form__group:nth-of-type(4) .form__group-wrapper {
+  .form__group--places .form__group-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -215,7 +215,7 @@
     margin: 0 auto;
   }
 
-  .form__group:nth-of-type(4) .form__control {
+  .form__group--places .form__control {
     width: 242px;
   }
 }
@@ -226,8 +226,8 @@
   }
 
   .form__group,
-  .form__group:nth-of-type(1),
-  .form__group:nth-of-type(3) {
+  .form__group--personal,
+  .form__group--feedback {
     width: 480px;
   }
 
@@ -244,19 +244,19 @@
     width: 960px;
   }
 
-  .form__group:nth-of-type(2) .form__text--phone,
-  .form__group:nth-of-type(2) .form__text--email {
+  .form__group--contacts .form__text--phone,
+  .form__group--contacts .form__text--email {
     width: 315px;
   }
 
-  .form__group:nth-of-type(2) .form__group-wrapper,
-  .form__group:nth-of-type(4) .form__group-wrapper {
+  .form__group--contacts .form__group-wrapper,
+  .form__group--places .form__group-wrapper {
     justify-content: space-around;
 
     width: 960px;
   }
 
-  .form__group:nth-of-type(4) .form__control {
+  .form__group--places .form__control {
     width: 198px;
   }
 }

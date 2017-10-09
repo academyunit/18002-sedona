@@ -35,26 +35,8 @@
     <p class="page-content__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </section>
   <div class="page-content__feedback">
-    <!-- Нужно ли добавить сюда wrapper? -->
     <form class="form" action="http://echo.htmlacademy.ru" method="post">
-      <!--
-      fieldset плохо дружит с flexbox. Что здесь првильнее будет сделать?
-
-      Я оставил fieldset и legend, обернул просто позиционируемый контент в доп. wrapper
-      -->
-
-      <!--
-      Имеет ли смысл тут присвоить кажой группе контролов свой уникальный модификатор?
-      Чтобы было нечто вроде:
-      .form__group.form__group--personal
-      .form__group.form__group--contacts
-      .form__group.form__group--feedback
-      .form__group.form__group--places
-
-      В CSS очень неудобно их по номерам искать и легко забыть потом будет.
-      -->
-
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--personal">
         <legend class="form__legend">Представьтесь</legend>
         <label class="form__label">
           Имя<sup>*</sup>: <input class="form__text" type="text" name="name" value="Петр">
@@ -66,7 +48,7 @@
           Отчество<sup>*</sup>: <input class="form__text" type="text" name="middle_name" value="Александрович">
         </label>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--contacts">
         <legend class="form__legend">Контактная инаформация</legend>
         <div class="form__group-wrapper">
           <label class="form__label form__label--phone">
@@ -81,7 +63,7 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--feedback">
         <legend class="form__legend">Ваше общее впечатление</legend>
         <div class="form__control">
           <input type="radio" class="form__radio visually-hidden" name="rating" id="rating_1" value="1" checked>
@@ -102,7 +84,7 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--places">
         <legend class="form__legend">Посещенные достопримечательности:</legend>
         <div class="form__group-wrapper">
           <div class="form__control">

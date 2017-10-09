@@ -126,45 +126,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  /**
-  Как я понимаю, уже существующие в tablet версии правила мы здесь не дублируем,
-  нам нужно лишь обновить их немного, поэтому закоментированный код ниже нам не нужен?
-
-  С другой стороны, в tablet могут поменять что-нибудь, а про это место могут забыть.
-
-  Или если меняешь там, то и тут тоже менять твоя обязанность? Какова вообще
-  best practice для этого?
-  */
-  //.navigation {
-  //  width: auto;
-  //  margin: 0;
-  //  padding-bottom: 0;
-  //}
-  //
-  //.navigation__list {
-  //  width: 100%;
-  //
-  //  background: white;
-  //  color: black;
-  //}
-  //
-  //.navigation__link {
-  //  color: inherit;
-  //}
-
   .navigation--show .navigation__list {
-    //display: flex;
     justify-content: space-around;
   }
 
-  //.navigation__sandwich-control {
-  //  display: none;
-  //}
-
   .navigation__wrapper {
-    //display: flex;
-
     width: 1070px;
-    //margin: 0 auto;
   }
 }

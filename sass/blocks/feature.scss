@@ -15,7 +15,7 @@
 
 .feature__number,
 .feature__description {
-  font-size: $font-size-standard;
+  font-size: $base-font-size;
   line-height: 21px;
 }
 
@@ -104,11 +104,5 @@
   .feature {
     width: 400px;
     height: 332px;
-  }
-
-  .feature--apartments,
-  .feature--souvenirs,
-  .feature--food {
-    background-position-x: 50%;
   }
 }
