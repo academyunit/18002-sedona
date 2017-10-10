@@ -9,13 +9,13 @@
 <header class="page-header page-header--inner-page">
   <div class="logo">
     <a href="#" class="logo__link">
-      <img src="#" alt="#" class="logo__image">
+      <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
     </a>
   </div>
-  <nav class="navigation">
+  <nav class="navigation navigation--show js-navigation">
     <button class="navigation__sandwich-control">Открыть/Закрыть</button>
     <div class="navigation__wrapper">
-      <ul class="navigation__list navigation__list--show js-navigation">
+      <ul class="navigation__list">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
@@ -23,18 +23,20 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__legend">
-    <img class="page-header__text" src="/img/text-sedona-index.svg">
-  </div>
 </header>
 <main class="page-content">
+  <div class="welcome">
+    <div class="welcome__wrapper">
+      <img class="welcome__legend" src="/img/text-sedona-index.svg">
+    </div>
+  </div>
   <section class="page-content__category">
     <h2 class="page-content__title">Оставьте свой отзыв</h2>
     <p class="page-content__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </section>
   <div class="page-content__feedback">
-    <form action="http://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__group">
+    <form class="form" action="http://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__group form__group--personal">
         <legend class="form__legend">Представьтесь</legend>
         <label class="form__label">
           Имя<sup>*</sup>: <input class="form__text" type="text" name="name" value="Петр">
@@ -46,20 +48,22 @@
           Отчество<sup>*</sup>: <input class="form__text" type="text" name="middle_name" value="Александрович">
         </label>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--contacts">
         <legend class="form__legend">Контактная инаформация</legend>
-        <label class="form__label form__label--phone">
-          Контактный телефон<sup>*</sup>:
-          <br>
-          <input class="form__text form__text--phone" type="text" name="phone" value="" placeholder="Введите телефон">
-        </label>
-        <label class="form__label form__label--email">
-          Электронная почта<sup>*</sup>:
-          <br>
-          <input class="form__text form__text--email" type="text" name="phone" value="" placeholder="Введите e-mail">
-        </label>
+        <div class="form__group-wrapper">
+          <label class="form__label form__label--phone">
+            Телефон<sup>*</sup>:
+            <br>
+            <input class="form__text form__text--phone" type="text" name="phone" value="" placeholder="Введите телефон">
+          </label>
+          <label class="form__label form__label--email">
+            Электронная почта<sup>*</sup>:
+            <br>
+            <input class="form__text form__text--email" type="text" name="phone" value="" placeholder="Введите e-mail">
+          </label>
+        </div>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--feedback">
         <legend class="form__legend">Ваше общее впечатление</legend>
         <div class="form__control">
           <input type="radio" class="form__radio visually-hidden" name="rating" id="rating_1" value="1" checked>
@@ -80,31 +84,33 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--places">
         <legend class="form__legend">Посещенные достопримечательности:</legend>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_1" value="1" checked>
-          <label class="form__label form__label--checkbox" for="place_1">
-            Мост Дьявола
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_2" value="2" checked>
-          <label class="form__label form__label--checkbox" for="place_2">
-            Слайд-парк
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_3" value="3">
-          <label class="form__label form__label--checkbox" for="place_3">
-            Гора-Колокол
-          </label>
-        </div>
-        <div class="form__control">
-          <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_4" value="4" checked>
-          <label class="form__label form__label--checkbox" for="place_4">
-            Красные скалы
-          </label>
+        <div class="form__group-wrapper">
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_1" value="1" checked>
+            <label class="form__label form__label--checkbox" for="place_1">
+              Мост Дьявола
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_2" value="2" checked>
+            <label class="form__label form__label--checkbox" for="place_2">
+              Слайд-парк
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_3" value="3">
+            <label class="form__label form__label--checkbox" for="place_3">
+              Гора-Колокол
+            </label>
+          </div>
+          <div class="form__control">
+            <input type="checkbox" class="form__checkbox visually-hidden" name="places[]" id="place_4" value="4" checked>
+            <label class="form__label form__label--checkbox" for="place_4">
+              Красные скалы
+            </label>
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__group">
@@ -118,21 +124,27 @@
   </div>
 </main>
 <footer class="page-footer">
-  <p class="tag">
-    <a href="#" class="tag__link">#visitsedona</a>
-  </p>
+  <div class="tag">
+    <div class="tag__wrapper">
+      <a href="#" class="tag__link">#visitsedona</a>
+    </div>
+  </div>
   <section class="social">
-    <ul class="social__list">
-      <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
-    </ul>
+    <div class="social__wrapper">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
+      </ul>
+    </div>
   </section>
   <div class="copyrights">
-    <span class="copyrights__author">Разработано</span>
-    <a href="#" class="copyrights__link">
-      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
-    </a>
+    <div class="copyrights__wrapper">
+      <span class="copyrights__author">Разработано</span>
+      <a href="#" class="copyrights__link">
+        <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
+      </a>
+    </div>
   </div>
 </footer>
 <script src="js/script.js"></script>

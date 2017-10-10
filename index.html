@@ -9,13 +9,13 @@
 <header class="page-header">
   <div class="logo">
     <a href="#" class="logo__link">
-      <img src="#" alt="#" class="logo__image">
+      <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
     </a>
   </div>
-  <nav class="navigation">
+  <nav class="navigation navigation--show js-navigation">
     <button class="navigation__sandwich-control">Открыть/Закрыть</button>
     <div class="navigation__wrapper">
-      <ul class="navigation__list navigation__list--show js-navigation">
+      <ul class="navigation__list">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
@@ -23,92 +23,106 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__legend">
-    <img class="page-header__text" src="/img/text-sedona-index.svg">
-  </div>
 </header>
 <main class="page-content">
+  <div class="welcome">
+    <div class="welcome__wrapper">
+      <img class="welcome__legend" src="/img/text-sedona-index.svg">
+    </div>
+  </div>
   <section class="page-content__category">
     <h2 class="page-content__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p class="page-content__description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
   </section>
-  <div class="feature-image feature-image--triangled">
-    <div class="feature">
-      <div class="feature__title">Настоящий городок</div>
-      <div class="feature__number">№1</div>
-      <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
+  <div class="feature-wrapper">
+    <div class="feature-image feature-image--triangled">
+      <div class="feature">
+        <div class="feature__title">Настоящий городок</div>
+        <div class="feature__number">№1</div>
+        <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
+      </div>
+      <div class="feature-image__picture">
+        <img src="/img/main-city-mobile@1x.jpg" width="320" height="260" alt="город" class="feature-image__photo">
+      </div>
     </div>
-    <div class="feature-image__picture">
-      <img src="/img/main-city-mobile@1x.jpg" width="320" height="260" alt="город" class="feature-image__photo">
+    <div class="feature feature--apartments">
+      <div class="feature__title">Жилье</div>
+      <div class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
     </div>
-  </div>
-  <div class="feature feature--apartments">
-    <div class="feature__title">Жилье</div>
-    <div class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
-  </div>
-  <div class="feature feature--souvenirs">
-    <div class="feature__title">Сувениры</div>
-    <div class="feature__description">Не только китайского, но и местного производства!</div>
-  </div>
-  <div class="feature feature--food">
-    <div class="feature__title">ЕДА</div>
-    <div class="feature__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
-  </div>
-  <div class="feature-image">
-    <div class="feature">
-      <div class="feature__title">Там есть мост дьявола</div>
-      <div class="feature__number">№2</div>
-      <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+    <div class="feature feature--souvenirs">
+      <div class="feature__title">Сувениры</div>
+      <div class="feature__description">Не только китайского, но и местного производства!</div>
     </div>
-    <div class="feature-image__picture">
-      <img src="/img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="куски камней" class="feature-image__photo">
+    <div class="feature feature--food">
+      <div class="feature__title">Еда</div>
+      <div class="feature__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
     </div>
-  </div>
-  <div class="feature feature--gray">
-    <div class="feature__title">Небольшая площадь</div>
-    <div class="feature__number">№3</div>
-    <div class="feature__description">Вce интересные места находятся очень близко</div>
-  </div>
-  <div class="feature feature--gray">
-    <div class="feature__title">Красивая дорога</div>
-    <div class="feature__number">№4</div>
-    <div class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно</div>
-  </div>
-  <div class="feature feature--gray">
-    <div class="feature__title">Мало туристов</div>
-    <div class="feature__number">№5</div>
-    <div class="feature__description">Большинство едет в гранд каньон и толпится там</div>
+    <div class="feature-image feature-image--reversed">
+      <div class="feature">
+        <div class="feature__title">Там есть мост дьявола</div>
+        <div class="feature__number">№2</div>
+        <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+      </div>
+      <div class="feature-image__picture">
+        <img src="/img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="куски камней" class="feature-image__photo">
+      </div>
+    </div>
+    <div class="feature feature--gray">
+      <div class="feature__title">Небольшая площадь</div>
+      <div class="feature__number">№3</div>
+      <div class="feature__description">Вce интересные места находятся очень близко</div>
+    </div>
+    <div class="feature feature--gray">
+      <div class="feature__title">Красивая дорога</div>
+      <div class="feature__number">№4</div>
+      <div class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно</div>
+    </div>
+    <div class="feature feature--gray">
+      <div class="feature__title">Мало туристов</div>
+      <div class="feature__number">№5</div>
+      <div class="feature__description">Большинство едет в гранд каньон и толпится там</div>
+    </div>
   </div>
   <section class="finder">
-    <b class="finder__title">Заинтересовались?</b>
-    <div class="finder__description">
-      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+    <div class="finder__wrapper">
+      <b class="finder__title">Заинтересовались?</b>
+      <div class="finder__description">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </div>
+      <a href="#" class="page-content__button button">Найти гостиницу</a>
     </div>
-    <a href="#" class="page-content__button button">Найти гостиницу</a>
   </section>
   <div class="map">
-    <div class="map__container">
-      <img src="/img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта" class="map__placeholder">
-      <img class="map__marker" src="/img/icon-map-marker.svg">
+    <div class="map__wrapper">
+      <div class="map__container">
+        <img src="/img/bg-map-mobile@1x.jpg" width="320" height="350" alt="карта" class="map__placeholder">
+        <img class="map__marker" src="/img/icon-map-marker.svg">
+      </div>
     </div>
   </div>
 </main>
 <footer class="page-footer">
-  <p class="tag">
-    <a href="#" class="tag__link">#visitsedona</a>
-  </p>
+  <div class="tag">
+    <div class="tag__wrapper">
+      <a href="#" class="tag__link">#visitsedona</a>
+    </div>
+  </div>
   <section class="social">
-    <ul class="social__list">
-      <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
-    </ul>
+    <div class="social__wrapper">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
+      </ul>
+    </div>
   </section>
   <div class="copyrights">
-    <span class="copyrights__author">Разработано</span>
-    <a href="#" class="copyrights__link">
-      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
-    </a>
+    <div class="copyrights__wrapper">
+      <span class="copyrights__author">Разработано</span>
+      <a href="#" class="copyrights__link">
+        <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
+      </a>
+    </div>
   </div>
 </footer>
 <script src="js/script.js"></script>

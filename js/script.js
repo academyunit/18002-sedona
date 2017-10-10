@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
 
         sandwichButton.addEventListener('click', (e) => {
-            mobileMenu.classList.toggle('navigation__list--show');
+            mobileMenu.classList.toggle('navigation--show');
         });
     })();
 

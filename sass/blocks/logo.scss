@@ -1,11 +1,17 @@
-.logo__image {
+.logo {
   position: absolute;
-  bottom: 362px;
-  left: 32%;
+  bottom: -28px;
+  left: 50%;
   z-index: 2;
 
   width: 103px;
   height: 84px;
 
-  background: url("/img/logo-sedona-mobile.svg");
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    top: 0;
+  }
 }

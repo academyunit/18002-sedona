@@ -17,11 +17,24 @@
 .finder__description {
   margin-bottom: 40px;
 
-  font-size: $fontSizeStandard;
+  font-size: $base-font-size;
   line-height: 24px;
 }
 
 .finder__title,
 .finder__description {
   text-transform: uppercase;
+}
+
+.finder__wrapper {
+  display: block;
+
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .finder__wrapper {
+    width: 700px;
+  }
 }

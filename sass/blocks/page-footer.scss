@@ -1,5 +1,22 @@
 .page-footer {
-  width: $mobileWidth;
+  display: block;
+
+  margin: 0 auto;
+  width: 320px;
 
   @include show-outline(red);
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1037px;
+  }
 }

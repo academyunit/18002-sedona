@@ -1,4 +1,7 @@
 .feature {
+  display: flex;
+  flex-direction: column;
+
   @include show-outline(green);
 
   padding: 40px 29px 40px 20px;
@@ -12,7 +15,7 @@
 
 .feature__number,
 .feature__description {
-  font-size: $fontSizeStandard;
+  font-size: $base-font-size;
   line-height: 21px;
 }
 
@@ -42,4 +45,64 @@
   margin-top: 21px;
   margin-bottom: 15px;
   padding-left: 70px;
+
+  background-position: 10px 10px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.feature--apartments {
+  background-image: url("/img/icon-house.svg");
+}
+
+.feature--souvenirs {
+  background-image: url("/img/icon-gift.svg");
+}
+
+.feature--food {
+  background-image: url("/img/icon-burger.svg");
+}
+
+/**
+Нормально, что он тут?
+*/
+.feature-wrapper {
+  width: 320px;
+
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feature-wrapper {
+    width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 232px;
+    height: 247px;
+  }
+
+  .feature--apartments,
+  .feature--souvenirs,
+  .feature--food {
+    padding-left: 0;
+    padding-top: 70px;
+
+    background-position-x: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-wrapper {
+    width: 1200px;
+  }
+
+  .feature {
+    width: 400px;
+    height: 332px;
+  }
 }

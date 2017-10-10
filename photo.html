@@ -9,13 +9,13 @@
 <header class="page-header page-header--inner-page">
   <div class="logo">
     <a href="#" class="logo__link">
-      <img src="#" alt="#" class="logo__image">
+      <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
     </a>
   </div>
-  <nav class="navigation">
+  <nav class="navigation navigation--show js-navigation">
     <button class="navigation__sandwich-control">Открыть/Закрыть</button>
     <div class="navigation__wrapper">
-      <ul class="navigation__list navigation__list--show js-navigation">
+      <ul class="navigation__list">
         <li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Фото и видео</a></li>
         <li class="navigation__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
@@ -23,60 +23,71 @@
       </ul>
     </div>
   </nav>
-  <div class="page-header__legend">
-    <img class="page-header__text" src="/img/text-sedona-index.svg">
-  </div>
 </header>
 <main class="page-content">
+  <div class="welcome">
+    <div class="welcome__wrapper">
+      <img class="welcome__legend" src="/img/text-sedona-index.svg">
+    </div>
+  </div>
   <section class="page-content__category">
     <h2 class="page-content__title">Фото и видео</h2>
-    <p class="page-content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-      политике и экономике.</p>
+    <p class="page-content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
   </section>
   <section class="slider">
     <div class="slider__list">
-      <div class="slider__item">
-        <div class="slider__image">
-          <img src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <div class="slider__image">
+            <img src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+          </div>
+          <div class="slider__info">
+            <h3 class="slider__title">Неродные просторы</h3>
+            <p class="slider__description">Автор фото: Борис</p>
+            <div class="slider__social">
+              <a href="#" class="slider__like">Нравится</a>
+              <span class="slider__total-likes">1350</span>
+            </div>
+          </div>
         </div>
-        <h3 class="slider__title">Неродные просторы</h3>
-        <p class="slider__description">Автор фото: Борис</p>
-        <div class="slider__social">
-          <a href="#" class="slider__like">Нравится</a>
-          <span class="slider__total-likes">1350</span>
+        <div class="slider__item">
+          <div class="slider__image">
+            <img src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+          </div>
+          <div class="slider__info">
+            <h3 class="slider__title">Местная растительность</h3>
+            <p class="slider__description">Автор фото: Сергей</p>
+            <div class="slider__social">
+              <a href="#" class="slider__like">Нравится</a>
+              <span class="slider__total-likes">143</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <div class="slider__image">
-          <img src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+        <div class="slider__item">
+          <div class="slider__image">
+            <img src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+          </div>
+          <div class="slider__info">
+            <h3 class="slider__title">Дорога на север</h3>
+            <p class="slider__description">Автор фото: Петр</p>
+            <div class="slider__social">
+              <a href="#" class="slider__like">Нравится</a>
+              <span class="slider__total-likes">96</span>
+            </div>
+          </div>
         </div>
-        <h3 class="slider__title">Местная растительность</h3>
-        <p class="slider__description">Автор фото: Сергей</p>
-        <div class="slider__social">
-          <a href="#" class="slider__like">Нравится</a>
-          <span class="slider__total-likes">143</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="slider__image">
-          <img src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
-        </div>
-        <h3 class="slider__title">Дорога на север</h3>
-        <p class="slider__description">Автор фото: Петр</p>
-        <div class="slider__social">
-          <a href="#" class="slider__like">Нравится</a>
-          <span class="slider__total-likes">96</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <div class="slider__image">
-          <img src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
-        </div>
-        <h3 class="slider__title">Мост дьявола</h3>
-        <p class="slider__description">Автор фото: Антон</p>
-        <div class="slider__social">
-          <a href="#" class="slider__like">Нравится</a>
-          <span class="slider__total-likes">254</span>
+        <div class="slider__item">
+          <div class="slider__image">
+            <img src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+          </div>
+          <div class="slider__info">
+            <h3 class="slider__title">Мост дьявола</h3>
+            <p class="slider__description">Автор фото: Антон</p>
+            <div class="slider__social">
+              <a href="#" class="slider__like">Нравится</a>
+              <span class="slider__total-likes">254</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -100,21 +111,27 @@
   </section>
 </main>
 <footer class="page-footer">
-  <p class="tag">
-    <a href="#" class="tag__link">#visitsedona</a>
-  </p>
+  <div class="tag">
+    <div class="tag__wrapper">
+      <a href="#" class="tag__link">#visitsedona</a>
+    </div>
+  </div>
   <section class="social">
-    <ul class="social__list">
-      <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-      <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
-    </ul>
+    <div class="social__wrapper">
+      <ul class="social__list">
+        <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
+      </ul>
+    </div>
   </section>
   <div class="copyrights">
-    <span class="copyrights__author">Разработано</span>
-    <a href="#" class="copyrights__link">
-      <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
-    </a>
+    <div class="copyrights__wrapper">
+      <span class="copyrights__author">Разработано</span>
+      <a href="#" class="copyrights__link">
+        <img src="/img/logo-htmlacademy.svg" class="copyrights__image">
+      </a>
+    </div>
   </div>
 </footer>
 <script src="js/script.js"></script>

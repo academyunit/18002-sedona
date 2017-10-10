@@ -7,3 +7,18 @@
   top: 45%;
   left: 45%;
 }
+
+.map__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    width: 700px;
+  }
+
+  .map__container {
+    @include show-outline(green);
+  }
+}
