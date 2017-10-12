@@ -1,12 +1,16 @@
 .navigation {
   position: relative;
 
-  width: 320px;
-  margin: 0 auto;
-
   padding-bottom: 56px;
 
   @include show-outline(green);
+}
+
+.navigation__wrapper {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
 }
 
 .navigation__list {
@@ -29,17 +33,32 @@
   display: block;
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+.navigation__item {
+  min-height: 55px;
+
+  text-align: center;
 }
 
-.navigation__item:nth-child(2) {
-  margin-right: 207px;
-}
+/*
+Is it for tablet+ ?
+*/
+
+//.navigation__item:not(:last-child) {
+//  margin-right: 50px;
+//}
+//
+//.navigation__item:nth-child(2) {
+//  margin-right: 207px;
+//}
 
 .navigation__link {
-  font-size: 14px;
-  line-height: 26px;
+  display: block;
+
+  padding: 8px;
+
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 40px;
 
   color: white;
   text-decoration: none;
@@ -121,7 +140,6 @@
     display: flex;
 
     width: 700px;
-    margin: 0 auto;
   }
 }
 

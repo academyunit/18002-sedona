@@ -2,7 +2,8 @@
   display: block;
 
   margin: 0 auto;
-  width: 320px;
+  min-width: $mobile-width;
+  //width: $mobile-width;
 
   @include show-outline(red);
 }

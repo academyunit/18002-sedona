@@ -9,8 +9,8 @@
 
 .feature__title {
   font-weight: bolder;
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .feature__number,
@@ -46,21 +46,56 @@
   margin-bottom: 15px;
   padding-left: 70px;
 
-  background-position: 10px 10px;
   background-size: 40px;
   background-repeat: no-repeat;
 }
 
 .feature--apartments {
+  background-position: 20px 6px;
   background-image: url("/img/icon-house.svg");
 }
 
 .feature--souvenirs {
+  background-position: 23px -3px;
+  background-size: 11%;
   background-image: url("/img/icon-gift.svg");
 }
 
 .feature--food {
+  margin-bottom: 39px;
+
+  background-position: 19px 1px;
+  background-size: 12%;
   background-image: url("/img/icon-burger.svg");
+}
+
+.feature--apartments .feature__title,
+.feature--apartments .feature__description,
+.feature--souvenirs .feature__title,
+.feature--souvenirs .feature__description,
+.feature--food .feature__title,
+.feature--food .feature__description
+{
+  margin-bottom: 0;
+
+  text-align: left;
+}
+
+.feature--apartments .feature__title,
+.feature--apartments .feature__description
+{
+  margin-top: 20px;
+}
+
+.feature--souvenirs .feature__title,
+.feature--souvenirs .feature__description
+{
+  margin-top: 13px;
+}
+
+.feature--food .feature__title,
+.feature--food .feature__description {
+  margin-top: 15px;
 }
 
 /**
