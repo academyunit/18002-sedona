@@ -1,23 +1,39 @@
 .page-footer {
   display: block;
 
-  margin: 0 auto;
   min-width: $mobile-width;
-  //width: $mobile-width;
 
   @include show-outline(red);
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    /*
+    Здесь width или min-width должен быть?
+    У нас ведь центровщик есть, а основной блок пускай тянется как хочет.
+    */
+    //width: 700px;
+    min-width: $mobile-width;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1037px;
+    min-width: 1037px;
   }
 }

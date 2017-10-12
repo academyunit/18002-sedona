@@ -68,22 +68,32 @@
         <img src="/img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="куски камней" class="feature-image__photo">
       </div>
     </div>
-    <div class="feature feature--gray">
+    <div class="feature feature--gray feature--living-square">
       <div class="feature__title">Небольшая площадь</div>
       <div class="feature__number">№3</div>
       <div class="feature__description">Вce интересные места находятся очень близко</div>
     </div>
-    <div class="feature feature--gray">
+    <div class="feature feature--gray feature--road">
       <div class="feature__title">Красивая дорога</div>
       <div class="feature__number">№4</div>
       <div class="feature__description">Ехать в Седону из Лас-Вегаса совсем не скучно</div>
     </div>
-    <div class="feature feature--gray">
+    <div class="feature feature--gray feature--tourists">
       <div class="feature__title">Мало туристов</div>
       <div class="feature__number">№5</div>
       <div class="feature__description">Большинство едет в гранд каньон и толпится там</div>
     </div>
   </div>
+  <!--
+  Как вот быть в ситуациях вроде этой? Здесь нужен margin перед .finder
+
+  Возможные варианты решения:
+  - дать margin-bottom .feature-wrapper (пока сделал так, но часто никакого wrapper'a снаружи блока нет - он обычно внутри)
+  - дать margin-top .finder
+
+  как безопасно margin для сеточных блоков задавать? Блок ведь может быть переиспользован, а там этот margin совсем не нужен будетю
+
+  -->
   <section class="finder">
     <div class="finder__wrapper">
       <b class="finder__title">Заинтересовались?</b>
@@ -103,22 +113,18 @@
   </div>
 </main>
 <footer class="page-footer">
-  <div class="tag">
-    <div class="tag__wrapper">
+  <div class="page-footer__wrapper">
+    <div class="tag">
       <a href="#" class="tag__link">#visitsedona</a>
     </div>
-  </div>
-  <section class="social">
-    <div class="social__wrapper">
+    <section class="social">
       <ul class="social__list">
         <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
         <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
         <li class="social__item"><a href="#" class="social__link social__link--vk">vk</a></li>
       </ul>
-    </div>
-  </section>
-  <div class="copyrights">
-    <div class="copyrights__wrapper">
+    </section>
+    <div class="copyrights">
       <span class="copyrights__author">Разработано</span>
       <a href="#" class="copyrights__link">
         <img src="/img/logo-htmlacademy.svg" class="copyrights__image">

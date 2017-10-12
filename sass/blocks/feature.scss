@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
 
+  min-width: 320px;
+  min-height: 130px;
+
   @include show-outline(green);
 
-  padding: 40px 29px 40px 20px;
+  padding: 42px 29px 37px 20px;
 }
 
 .feature__title {
@@ -20,6 +23,11 @@
 }
 
 .feature--gray {
+  min-height: 168px;
+
+  padding-top: 33px;
+  padding-bottom: 20px;
+
   background: #eeeeee;
 }
 
@@ -42,8 +50,6 @@
   margin: 0;
   padding: 0;
 
-  margin-top: 21px;
-  margin-bottom: 15px;
   padding-left: 70px;
 
   background-size: 40px;
@@ -51,18 +57,24 @@
 }
 
 .feature--apartments {
+  margin-top: 18px;
+
   background-position: 20px 6px;
   background-image: url("/img/icon-house.svg");
 }
 
 .feature--souvenirs {
+  margin-top: 9px;
+  min-height: 91px;
+
   background-position: 23px -3px;
   background-size: 11%;
   background-image: url("/img/icon-gift.svg");
 }
 
 .feature--food {
-  margin-bottom: 39px;
+  margin-top: 19px;
+  margin-bottom: 20px;
 
   background-position: 19px 1px;
   background-size: 12%;
@@ -90,7 +102,7 @@
 .feature--souvenirs .feature__title,
 .feature--souvenirs .feature__description
 {
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .feature--food .feature__title,
