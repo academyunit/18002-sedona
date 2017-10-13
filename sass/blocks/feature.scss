@@ -121,7 +121,7 @@
 
 @media (min-width: $tablet-width) {
   .feature-wrapper {
-    width: 700px;
+    width: 766px;
     margin: 0 auto;
 
     display: flex;
@@ -129,18 +129,41 @@
   }
 
   .feature {
-    width: 232px;
-    height: 247px;
+    min-width: 255px;
+    width: 255px;
+
+    margin: 0;
   }
 
   .feature--apartments,
   .feature--souvenirs,
   .feature--food {
+    display: flex;
+    align-items: center;
+
+    min-height: 292px;
+
     padding-left: 0;
-    padding-top: 70px;
+    padding-top: 144px;
 
     background-position-x: 50%;
+
+    background-position-y: 60px;
+    //background-image: url(/img/icon-house.svg);
+    background-size: 30%;
   }
+
+  //.feature--apartments {
+  //  order: 0;
+  //}
+  //
+  //.feature--food {
+  //  order: 1;
+  //}
+  //
+  //.feature--souvenirs {
+  //  order: 2;
+  //}
 }
 
 @media (min-width: $desktop-width) {

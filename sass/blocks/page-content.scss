@@ -50,11 +50,21 @@
 @media (min-width: $tablet-width) {
   .page-content__category {
     width: 550px;
-    height: 197px;
+    min-height: 160px;
   }
 
   .page-content__feedback {
     width: 650px;
+  }
+
+  .page-content__title {
+    font-family: "PT Sans Bold", Verdana, sans-serif;
+  }
+
+  .page-content__title br,
+  .page-content__description br
+  {
+    display: none;
   }
 }
 

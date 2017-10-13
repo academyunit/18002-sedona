@@ -124,8 +124,30 @@ Is it for tablet+ ?
     color: black;
   }
 
+  /**
+    Это нормальный способ сделать так меню в навигации? Сдается мне, лучше можно :)
+   */
+  .navigation__item:first-child {
+    margin-right: 79px;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-right: 205px;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-right: 50px;
+  }
+
+  //.navigation__item:last-child {
+  //  margin-right: 79px;
+  //}
+
   .navigation__link {
     color: inherit;
+
+    font-size: 14px;
+    padding: 0;
   }
 
   .navigation--show .navigation__list {
@@ -139,7 +161,8 @@ Is it for tablet+ ?
   .navigation__wrapper {
     display: flex;
 
-    width: 671px;
+    width: 700px;
+    margin-left: 71px;
   }
 }
 

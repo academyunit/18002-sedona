@@ -21,6 +21,14 @@
     width: 100%;
   }
 
+  .feature-image--triangled .feature {
+    padding-top: 75px;
+  }
+
+  .feature-image--triangled .feature-image__picture {
+    height: 253px;
+  }
+
   .feature-image--reversed .feature {
     order: 2;
 
@@ -34,11 +42,11 @@
   }
 
   .feature-image:nth-child(1) > .feature {
-    width: 256px;
+    min-width: 255px;
   }
 
   .feature-image:nth-child(1) > .feature-image__picture {
-    width: 512px;
+    min-width: 512px;
 
     @include show-outline(green);
   }

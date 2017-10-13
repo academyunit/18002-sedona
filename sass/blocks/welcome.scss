@@ -37,15 +37,22 @@
 
 @media (min-width: $tablet-width) {
   .welcome {
-
-    width: 700px;
+    width: 770px;
     height: 517px;
+    margin-top: -7px;
+    margin-bottom: 47px;
 
+    /** Change it with a tablet bg image */
     background: white url("/img/bg-back-mobile@1x.jpg") 100% 100% no-repeat;
 
     &::after {
       background: transparent url("/img/bg-intro-triangle-mobile.svg");
     }
+  }
+
+  .welcome__legend {
+    top: 14%;
+    height: 67%;
   }
 }
 
