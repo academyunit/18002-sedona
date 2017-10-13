@@ -21,6 +21,10 @@
     width: 100%;
   }
 
+  .feature-image:first-child {
+    order: -8;
+  }
+
   .feature-image--triangled .feature {
     padding-top: 75px;
   }

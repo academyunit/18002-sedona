@@ -153,17 +153,17 @@
     background-size: 30%;
   }
 
-  //.feature--apartments {
-  //  order: 0;
-  //}
-  //
-  //.feature--food {
-  //  order: 1;
-  //}
-  //
-  //.feature--souvenirs {
-  //  order: 2;
-  //}
+  .feature--apartments {
+    order: -7;
+  }
+
+  .feature--food {
+    order: -6;
+  }
+
+  .feature--souvenirs {
+    order: -5;
+  }
 }
 
 @media (min-width: $desktop-width) {
