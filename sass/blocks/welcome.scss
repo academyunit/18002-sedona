@@ -42,11 +42,15 @@
     margin-top: -7px;
     margin-bottom: 47px;
 
-    /** Change it with a tablet bg image */
-    background: white url("/img/bg-back-mobile@1x.jpg") 100% 100% no-repeat;
+    background: white url("/img/bg-back-tablet@1x.jpg") 100% 100% no-repeat;
 
     &::after {
-      background: transparent url("/img/bg-intro-triangle-mobile.svg");
+      left: 0;
+
+      height: 57px;
+      width: 100%;
+
+      background: transparent url("/img/bg-intro-triangle-tablet.svg");
     }
   }
 
@@ -66,7 +70,10 @@
     background-position-x: 50%;
 
     &::after {
-      background: transparent url("/img/bg-intro-triangle-mobile.svg");
+      /**
+      add height here
+       */
+      background: transparent url("/img/bg-intro-triangle-desktop.svg");
     }
   }
 }
