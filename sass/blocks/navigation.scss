@@ -164,7 +164,19 @@ Is it for tablet+ ?
 
 @media (min-width: $desktop-width) {
   .navigation--show .navigation__list {
-    justify-content: space-around;
+    justify-content: stretch;
+  }
+
+  .navigation__item:first-child {
+    margin-right: 159px;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-right: 385px;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-right: 140px;
   }
 
   .navigation__wrapper {

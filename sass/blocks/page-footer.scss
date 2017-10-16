@@ -1,6 +1,7 @@
 .page-footer {
   display: block;
 
+  min-height: 206px;
   min-width: $mobile-width;
 
   @include show-outline(red);
@@ -39,5 +40,9 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     min-width: 1037px;
+  }
+
+  .page-footer__wrapper {
+    width: 1133px;
   }
 }

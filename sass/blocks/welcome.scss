@@ -7,7 +7,10 @@
   width: 320px;
   height: 390px;
 
-  background: white url("/img/bg-back-mobile@1x.jpg") 50% 50% no-repeat;
+  background-color: white;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
 
   &::after {
     position: absolute;
@@ -42,7 +45,8 @@
     margin-top: -7px;
     margin-bottom: 47px;
 
-    background: white url("/img/bg-back-tablet@1x.jpg") 100% 100% no-repeat;
+    background-position: 100%;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
 
     &::after {
       left: 0;
@@ -67,7 +71,7 @@
     width: 1200px;
     height: 519px;
 
-    background-position-x: 50%;
+    background-image: url("/img/bg-back-desktop@1x.jpg");
 
     &::after {
       /**

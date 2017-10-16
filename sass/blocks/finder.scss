@@ -56,3 +56,13 @@
     margin-bottom: 42px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .finder__description {
+    margin-bottom: 48px;
+  }
+
+  .finder {
+    margin-bottom: 66px;
+  }
+}

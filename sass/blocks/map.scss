@@ -25,3 +25,9 @@
     @include show-outline(green);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    width: 1200px;
+  }
+}

@@ -21,3 +21,9 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tag {
+    margin-left: 100px;
+  }
+}
