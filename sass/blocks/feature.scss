@@ -6,13 +6,37 @@
   min-height: 130px;
 
   @include show-outline(green);
-
-  padding: 42px 29px 37px 20px;
 }
 
 .feature--promo {
   padding: 0;
 }
+
+.feature--house {}
+
+.feature--souvenir .feature__content {
+  margin-top: 31px;
+  margin-left: 2px;
+}
+
+.feature--souvenir .feature__logo {
+  margin-top: 0;
+  margin-left: 25px;
+}
+
+.feature--food {
+  min-height: 146px;
+}
+
+.feature--food .feature__logo {
+  margin-top: 0;
+  margin-left: 19px;
+}
+
+.feature--food .feature__content {
+  margin-top: 26px;
+}
+
 
 /**
 Now working?
@@ -22,25 +46,39 @@ Now working?
 }
 
 .feature--promo .feature__description {
-  margin-left: 68px;
-  text-align: left;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.feature__content {
+  width: 211px;
+  margin-top: 40px;
+  margin-left: 7px;
 }
 
 .feature__logo {
-  flex-grow: 1;
-
-  width: 15%;
+  margin-top: 8px;
+  margin-left: 20px;
+  width: 43px;
 }
 
-.feature__logo svg {
+.feature__icon {
   width: 42px;
 }
 
+.feature__icon--house {
+  width: 42px;
+}
+
+.feature__icon--souvenir {
+  width: 32px;
+}
+
+.feature__icon--food {
+  width: 39px;
+}
+
 .feature__title {
-  flex-grow: 1;
-
-  width: 85%;
-
   font-weight: bolder;
   font-size: 18px;
   line-height: 18px;
@@ -52,25 +90,76 @@ Now working?
   line-height: 21px;
 }
 
+.feature--promo {
+  min-height: 116px;
+}
+
+.feature--house {
+  min-height: 140px;
+}
+
+.feature--house .feature__description {
+  margin-top: 18px;
+}
+
+.feature--food {
+  min-height: 161px;
+}
+
 .feature--gray {
+  flex-direction: column;
+  align-items: center;
+
   min-height: 168px;
 
-  padding-top: 33px;
-  padding-bottom: 20px;
-
   background: #eeeeee;
+}
+
+.feature--gray .feature__description {
+  width: 243px;
+}
+
+.feature--road .feature__description {
+  margin-left: 40px;
+}
+
+.feature--tourists .feature__description {
+  width: 220px;
+}
+
+.feature--living-square .feature__title,
+.feature--road .feature__title,
+.feature--tourists .feature__title
+{
+  margin-top: 31px;
+}
+
+.feature--living-square .feature__number,
+.feature--road .feature__number,
+.feature--tourists .feature__number
+{
+  margin-top: 10px;
+}
+
+.feature--living-square .feature__description,
+.feature--road .feature__description,
+.feature--tourists .feature__description
+{
+  margin-top: 20px;
+}
+
+.feature--tourists .feature__description {
+  width: 250px;
 }
 
 .feature__title,
 .feature__number,
 .feature__description {
-  text-align: center;
   text-transform: uppercase;
-
-  margin-bottom: 15px;
 }
 
 .feature__description {
+  width: 270px;
   margin-bottom: 0;
 }
 
@@ -93,10 +182,81 @@ Now working?
   }
 
   .feature {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     min-width: 255px;
+    min-height: 331px;
     width: 255px;
 
     margin: 0;
+    padding: 0;
+  }
+
+  .feature--promo .feature__description,
+  .feature__description {
+    width: 162px;
+  }
+
+  .feature--gray {
+    justify-content: stretch;
+    min-height: 257px;
+  }
+
+  .feature__logo {
+    flex-grow: 0;
+
+    width: 100%;
+  }
+
+  .feature--living-square .feature__title,
+  .feature--road .feature__title,
+  .feature--tourists .feature__title
+  {
+    margin-top: 48px;
+  }
+
+  .feature--gray .feature__description
+  {
+    width: 140px;
+  }
+
+  .feature--living-square .feature__description {
+    width: 160px;
+  }
+
+  .feature__logo,
+  .feature--souvenir .feature__logo,
+  .feature--food .feature__logo
+  {
+    flex-grow: 0;
+    margin: 0;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .feature__content,
+  .feature--souvenir .feature__content,
+  .feature--food .feature__content
+  {
+    margin: 0;
+  }
+
+  .feature__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature__title {
+    text-align: center;
+  }
+
+  .feature__icon {
+    width: 100%;
   }
 
   .feature__title {

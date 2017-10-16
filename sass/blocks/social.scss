@@ -16,8 +16,34 @@
 .social__link {
   display: inline-block;
 
+  font-size: 0;
+
   width: 47px;
   height: 47px;
 
-  background: $main-color;
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social__link--twitter {
+  background-image: url("/img/icon-twitter.svg");
+}
+
+.social__link--facebook {
+  background-image: url("/img/icon-facebook.svg");
+}
+
+.social__link--vk {
+  background-image: url("/img/icon-facebook.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 205px;
+
+    margin-top: 31px;
+    margin-left: 114px;
+    margin-bottom: 0;
+  }
 }

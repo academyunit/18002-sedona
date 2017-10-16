@@ -15,6 +15,8 @@
 }
 
 .finder__description {
+  width: 265px;
+  margin: 0 auto;
   margin-bottom: 35px;
 
   font-size: $base-font-size;
@@ -34,7 +36,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .finder {
+    margin-top: 54px;
+    margin-bottom: 58px;
+  }
+
   .finder__wrapper {
     width: 700px;
+  }
+
+  .finder__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .finder__description {
+    width: 445px;
+    margin-bottom: 42px;
   }
 }

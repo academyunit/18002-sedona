@@ -10,3 +10,16 @@
 
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .copyrights {
+    margin-top: 45px;
+    margin-left: 80px;
+  }
+
+  .copyrights__link {
+    display: inline-block;
+
+    margin-left: 10px;
+  }
+}

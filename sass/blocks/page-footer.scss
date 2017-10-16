@@ -23,12 +23,16 @@
     Здесь width или min-width должен быть?
     У нас ведь центровщик есть, а основной блок пускай тянется как хочет.
     */
-    //width: 700px;
-    min-width: $mobile-width;
+    min-width: 770px;
+    min-height: 120px;
+    //min-width: $mobile-width;
   }
 
   .page-footer__wrapper {
+    width: 650px;
+
     flex-direction: row;
+    align-items: stretch;
   }
 }
 

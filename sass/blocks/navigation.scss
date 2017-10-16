@@ -119,6 +119,7 @@ Is it for tablet+ ?
 
   .navigation__list {
     width: 100%;
+    margin-left: 27px;
 
     background: white;
     color: black;
@@ -139,10 +140,6 @@ Is it for tablet+ ?
     margin-right: 50px;
   }
 
-  //.navigation__item:last-child {
-  //  margin-right: 79px;
-  //}
-
   .navigation__link {
     color: inherit;
 
@@ -161,8 +158,7 @@ Is it for tablet+ ?
   .navigation__wrapper {
     display: flex;
 
-    width: 700px;
-    margin-left: 71px;
+    width: 721px;
   }
 }
 

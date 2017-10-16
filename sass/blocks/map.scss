@@ -15,10 +15,13 @@
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    width: 700px;
+    width: 770px;
+    height: 351px;
   }
 
   .map__container {
+    height: 350px;
+
     @include show-outline(green);
   }
 }

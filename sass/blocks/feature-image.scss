@@ -4,11 +4,45 @@
 }
 
 .feature-image .feature {
-  min-height: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 234px;
 }
 
-.feature-image--triangled .feature {
-  padding-top: 90px;
+.feature-image--triangled .feature__title {
+  margin-top: 89px;
+  margin-bottom: 11px;
+}
+
+.feature-image--triangled .feature__number {
+  margin-bottom: 15px;
+}
+
+.feature-image--reversed {
+  min-height: 450px;
+}
+
+.feature-image--reversed .feature {
+  min-height: 189px;
+}
+
+.feature-image--reversed .feature-image__picture {
+  min-height: 260px;
+}
+
+.feature-image--reversed .feature__title {
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.feature-image--reversed .feature__number {
+  margin-bottom: 12px;
+}
+
+.feature-image--reversed .feature__description {
+  margin-left: 10px;
 }
 
 .feature-image__picture {
@@ -34,9 +68,30 @@
     width: 100%;
   }
 
+  .feature__title {
+    width: 126px;
+  }
+
+  .feature-image:first-child .feature {
+    justify-content: stretch;
+  }
+
+  .feature-image--triangled .feature__number {Аштш
+    margin-bottom: 20px;
+  }
+
+  .feature-image--reversed .feature__title {
+    margin-top: 0;
+    width: 156px;
+  }
+
+  .feature-image--reversed .feature__description {
+    margin-left: 20px;
+  }
+
   .feature-image__picture {
     width: 512px;
-    height: 260px;
+    height: 256px;
   }
 
   .feature-image__picture--main-city {
@@ -47,26 +102,43 @@
     background-image: url("/img/main-bridge-tablet@1x.jpg");
   }
 
-  .feature-image:first-child {
+  .feature-image--triangled {
     order: -8;
   }
 
-  .feature-image--triangled .feature {
-    padding-top: 45px;
+  .feature--house {
+    order: -7;
+  }
+
+  .feature--souvenir {
+    order: -5;
+  }
+
+  .feature--food {
+    order: -6;
+  }
+
+  .feature-image--triangled .feature__title {
+    margin-top: 43px;
   }
 
   .feature-image--triangled .feature-image__picture {
     height: 253px;
   }
 
+  .feature-image--reversed {
+    min-height: 255px;
+  }
+
   .feature-image--reversed .feature {
-    order: 2;
+    order: 1;
 
     width: 256px;
   }
 
   .feature-image--reversed .feature-image__picture {
     width: 512px;
+    min-height: 255px;
 
     @include show-outline(green);
   }
@@ -98,8 +170,6 @@
   }
 
   .feature-image--reversed .feature {
-    order: 2;
-
     width: 400px;
     height: 255px;
   }
