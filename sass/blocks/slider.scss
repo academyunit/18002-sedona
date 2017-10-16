@@ -28,7 +28,24 @@
 
 .slider__item {
   width: 280px;
-  height: 370px;
+  min-height: 416px;
+}
+
+.slider__item:nth-last-child(2) .slider__image,
+.slider__item:last-child .slider__image {
+  margin-bottom: 5px;
+}
+
+.slider__image {
+  margin-bottom: 10px;
+}
+
+.slider__like {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 12px;
+
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {

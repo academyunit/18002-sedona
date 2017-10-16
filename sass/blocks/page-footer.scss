@@ -7,6 +7,10 @@
   @include show-outline(red);
 }
 
+.page-footer--inner .tag {
+  margin-top: 20px;
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;

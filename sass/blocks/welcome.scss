@@ -26,7 +26,13 @@
 }
 
 .welcome--inner {
-  height: 160px;
+  height: 156px;
+  background-position: 60%;
+}
+
+.welcome--inner .welcome__legend {
+  top: 32%;
+  height: 25%;
 }
 
 .welcome__legend {
@@ -41,11 +47,11 @@
 @media (min-width: $tablet-width) {
   .welcome {
     width: 770px;
-    height: 517px;
+    height: 287px;
     margin-top: -7px;
     margin-bottom: 47px;
 
-    background-position: 100%;
+    background-position: 100% 100%;
     background-image: url("/img/bg-back-tablet@1x.jpg");
 
     &::after {
@@ -58,9 +64,18 @@
     }
   }
 
+  .welcome--inner {
+    margin-bottom: 74px;
+  }
+
   .welcome__legend {
     top: 15%;
     height: 67%;
+  }
+
+  .welcome--inner .welcome__legend {
+    top: 32%;
+    height: 28%;
   }
 }
 

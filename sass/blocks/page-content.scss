@@ -11,6 +11,7 @@
 
   margin: 0 auto;
   width: 320px;
+  min-height: 174px;
 }
 
 .page-content__title,
@@ -53,6 +54,8 @@
   }
 
   .page-content__title {
+    font-size: 30px;
+
     margin-bottom: 31px;
   }
 
@@ -65,8 +68,10 @@
     width: 650px;
   }
 
+  /*
+  Что это тут делает?
+  */
   .page-content__title {
-    font-size: 21px;
     font-family: "PT Sans Bold", Verdana, sans-serif;
   }
 
