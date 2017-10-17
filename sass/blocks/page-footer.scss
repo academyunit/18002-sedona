@@ -33,6 +33,23 @@
     //min-width: $mobile-width;
   }
 
+  .page-footer--inner {
+    margin-top: 64px;
+    min-height: 92px;
+  }
+
+  .page-footer--inner .social {
+    margin-top: 3px;
+  }
+
+  .page-footer--inner .copyrights {
+    margin-top: 18px;
+  }
+
+  .page-footer--photo {
+    margin-top: 108px;
+  }
+
   .page-footer__wrapper {
     width: 650px;
 

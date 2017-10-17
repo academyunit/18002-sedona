@@ -44,8 +44,6 @@
 .page-content__feedback {
   margin: 0 auto;
   width: 320px;
-
-  @include show-outline(green);
 }
 
 @media (min-width: $tablet-width) {
@@ -54,14 +52,24 @@
   }
 
   .page-content__title {
-    font-size: 30px;
+    font-size: 21px;
 
     margin-bottom: 31px;
+  }
+
+  .page-content__title--photo {
+    font-size: 30px;
   }
 
   .page-content__category {
     width: 550px;
     min-height: 160px;
+
+    margin-bottom: 0px;
+  }
+
+  .page-content__category--photo {
+    margin-bottom: 15px;
   }
 
   .page-content__feedback {
@@ -90,5 +98,17 @@
 @media (min-width: $desktop-width) {
   .page-content__feedback {
     width: 960px;
+  }
+
+  .page-content__category--photo {
+    margin-bottom: 10px;
+  }
+
+  .page-content__title {
+    margin-bottom: 24px;
+  }
+
+  .page-content__description--photo {
+    width: 510px;
   }
 }

@@ -31,9 +31,9 @@
       <img class="welcome__legend" src="/img/text-sedona.svg">
     </div>
   </div>
-  <section class="page-content__category">
-    <h2 class="page-content__title">Фото и видео</h2>
-    <p class="page-content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+  <section class="page-content__category page-content__category--photo">
+    <h2 class="page-content__title page-content__title--photo">Фото и видео</h2>
+    <p class="page-content__description page-content__description--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
   </section>
   <section class="slider">
     <div class="slider__list">
@@ -47,8 +47,10 @@
             </picture>
           </div>
           <div class="slider__info">
-            <h3 class="slider__title">Неродные просторы</h3>
-            <p class="slider__description">Автор фото: Борис</p>
+            <div class="slider__summary">
+              <h3 class="slider__title">Неродные просторы</h3>
+              <p class="slider__description">Автор фото: Борис</p>
+            </div>
             <div class="slider__social">
               <!-- почистить свг от мусора -->
               <a href="#" class="slider__like">
@@ -69,11 +71,17 @@
         </div>
         <div class="slider__item">
           <div class="slider__image">
-            <img src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.jpg">
+              <img class="slider__photo" src="/img/photo-cactus-mobile@1x.jpg" alt="Карта">
+            </picture>
           </div>
           <div class="slider__info">
-            <h3 class="slider__title">Местная растительность</h3>
-            <p class="slider__description">Автор фото: Сергей</p>
+            <div class="slider__summary">
+              <h3 class="slider__title">Местная растительность</h3>
+              <p class="slider__description">Автор фото: Сергей</p>
+            </div>
             <div class="slider__social">
               <a href="#" class="slider__like">
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -93,11 +101,17 @@
         </div>
         <div class="slider__item">
           <div class="slider__image">
-            <img src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.jpg">
+              <img class="slider__photo" src="/img/photo-roads-mobile@1x.jpg" alt="Карта">
+            </picture>
           </div>
           <div class="slider__info">
-            <h3 class="slider__title">Дорога на север</h3>
-            <p class="slider__description">Автор фото: Петр</p>
+            <div class="slider__summary">
+              <h3 class="slider__title">Дорога на север</h3>
+              <p class="slider__description">Автор фото: Петр</p>
+            </div>
             <div class="slider__social">
               <a href="#" class="slider__like">
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -117,11 +131,17 @@
         </div>
         <div class="slider__item">
           <div class="slider__image">
-            <img src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="#" class="slider__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.jpg">
+              <img class="slider__photo" src="/img/photo-bridge-mobile@1x.jpg" alt="Карта">
+            </picture>
           </div>
           <div class="slider__info">
-            <h3 class="slider__title">Мост дьявола</h3>
-            <p class="slider__description">Автор фото: Антон</p>
+            <div class="slider__summary">
+              <h3 class="slider__title">Мост дьявола</h3>
+              <p class="slider__description">Автор фото: Антон</p>
+            </div>
             <div class="slider__social">
               <a href="#" class="slider__like">
                 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
@@ -160,7 +180,7 @@
     </div>
   </section>
 </main>
-<footer class="page-footer page-footer--inner">
+<footer class="page-footer page-footer--inner page-footer--photo">
   <div class="page-footer__wrapper">
     <div class="tag">
       <a href="#" class="tag__link">#visitsedona</a>

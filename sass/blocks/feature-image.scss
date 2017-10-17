@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
 
-  min-height: 234px;
+  min-height: 217px
 }
 
 .feature-image--triangled .feature__description,
@@ -18,7 +18,7 @@
 }
 
 .feature-image--triangled .feature__title {
-  margin-top: 89px;
+  margin-top: 70px;
   margin-bottom: 11px;
 }
 
@@ -145,8 +145,6 @@
   .feature-image--reversed .feature-image__picture {
     width: 512px;
     min-height: 255px;
-
-    @include show-outline(green);
   }
 
   .feature-image:nth-child(1) > .feature {
@@ -155,8 +153,6 @@
 
   .feature-image:nth-child(1) > .feature-image__picture {
     min-width: 512px;
-
-    @include show-outline(green);
   }
 
   .feature-image:nth-child(2) {
@@ -197,8 +193,6 @@
   .feature-image--reversed .feature-image__picture {
     width: 800px;
     height: 256px;
-
-    @include show-outline(green);
   }
 
   .feature-image:nth-child(1) > .feature {
@@ -209,8 +203,6 @@
 
   .feature-image:nth-child(1) > .feature-image__picture {
     width: 800px;
-
-    @include show-outline(green);
   }
 
   .feature-image--reversed .feature__title {

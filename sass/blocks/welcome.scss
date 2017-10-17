@@ -16,8 +16,8 @@
     position: absolute;
     bottom: 0;
 
-    width: 320px;
-    height: 26px;
+    width: 101%;
+    height: 25px;
 
     background: transparent url("/img/bg-intro-triangle-mobile.svg");
 
@@ -47,18 +47,18 @@
 @media (min-width: $tablet-width) {
   .welcome {
     width: 770px;
-    height: 287px;
+    height: 517px;
     margin-top: -7px;
     margin-bottom: 47px;
 
-    background-position: 100% 100%;
+    background-position: 100%;
     background-image: url("/img/bg-back-tablet@1x.jpg");
 
     &::after {
       left: 0;
 
-      height: 57px;
-      width: 100%;
+      height: 56px;
+      width: 101%;
 
       background: transparent url("/img/bg-intro-triangle-tablet.svg");
     }
@@ -66,6 +66,7 @@
 
   .welcome--inner {
     margin-bottom: 74px;
+    height: 287px;
   }
 
   .welcome__legend {
@@ -81,8 +82,6 @@
 
 @media (min-width: $desktop-width) {
   .welcome {
-    @include show-outline(green);
-
     width: 1200px;
     height: 519px;
 
@@ -94,5 +93,10 @@
        */
       background: transparent url("/img/bg-intro-triangle-desktop.svg");
     }
+  }
+
+  .welcome--inner {
+    height: 299px;
+    margin-bottom: 114px;
   }
 }
