@@ -7,6 +7,11 @@
   @include show-outline(red);
 }
 
+.page-footer--feedback {
+  margin-top: 51px;
+  min-height: 228px;
+}
+
 .page-footer--inner .tag {
   margin-top: 20px;
 }
@@ -48,6 +53,11 @@
 
   .page-footer--photo {
     margin-top: 108px;
+  }
+
+  .page-footer--feedback {
+    margin-top: 88px;
+    min-height: 91px;
   }
 
   .page-footer__wrapper {

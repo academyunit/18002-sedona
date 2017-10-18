@@ -46,15 +46,32 @@
   width: 320px;
 }
 
+.page-content--feedback .page-content__description {
+  line-height: 24px;
+}
+
+.page-content--feedback .page-content__category {
+  margin-bottom: 12px;
+}
+
 @media (min-width: $tablet-width) {
+  .page-content--feedback .page-content__category {
+    margin-bottom: 20px;
+  }
+
   .page-content {
     margin-bottom: 0;
   }
 
   .page-content__title {
-    font-size: 21px;
+    font-size: 31px;
 
     margin-bottom: 31px;
+  }
+
+  .page-content__description {
+    width: 510px;
+    margin: 0 auto;
   }
 
   .page-content__title--photo {

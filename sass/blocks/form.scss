@@ -16,8 +16,15 @@
   margin-bottom: 20px;
 }
 
+.form__control {
+  margin-bottom: 20px;
+}
+
 .form__legend {
-  margin-bottom: 15px;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 35px;
 
   font-weight: bolder;
   font-size: 18px;
@@ -156,6 +163,96 @@
 .form__button {
   width: 280px;
   height: 60px;
+
+  font-size: 18px;
+}
+
+.form__group--personal,
+.form__group--contacts,
+.form__group--feedback,
+.form__group--places,
+.form__group--message
+{
+  margin: 0 auto;
+  width: 283px;
+}
+
+.form__group--personal {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 28px;
+}
+
+.form__group--contacts {
+  margin-bottom: 34px;
+}
+
+.form__group--contacts .form__label {
+  margin-left: 25px;
+
+  min-height: 37px;
+}
+
+.form__group--contacts .form__item {
+  margin-bottom: 9px;
+}
+
+.form__group--personal .form__label {
+  margin-right: 10px;
+}
+
+.form__group--personal .form__legend {
+  margin-left: -11px;
+  margin-bottom: 20px;
+}
+
+.form__group--contacts .form__legend {
+  margin-bottom: 19px;
+}
+
+.form__text--phone,
+.form__text--email
+{
+  font-size: 16px;
+}
+
+.form__group--feedback {
+  margin-bottom: 21px;
+}
+
+.form__group--feedback .form__item {
+  margin-bottom: 9px;
+}
+
+.form__group--feedback .form__label--radio {
+  font-size: 18px;
+  padding-left: 78px;
+}
+
+.form__group--places {
+  margin-bottom: 8px;
+}
+
+.form__group--places .form__legend {
+  margin-bottom: 28px;
+}
+
+.form__group--places .form__item {
+  margin-bottom: 20px;
+}
+
+.form__group--places .form__label {
+  padding-left: 79px;
+  font-size: 19px;
+}
+
+.form__group--message .form__legend {
+  margin-bottom: 17px;
+}
+
+.form__group--message .form__label {
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
@@ -167,9 +264,18 @@
     width: 324px;
   }
 
-  .form__group--personal,
+  //.form__group--personal,
+  //.form__group--feedback {
+  //  width: 324px;
+  //}
+
+  .form__group--personal {
+    //width: 344px;
+    width: 297px;
+  }
+
   .form__group--feedback {
-    width: 324px;
+    width: 300px;
   }
 
   .form__group--feedback {
@@ -180,6 +286,10 @@
     flex-grow: 1;
 
     width: 100%;
+  }
+
+  .form__group--personal .form__item {
+    width: 297px;
   }
 
   .form__group:last-of-type .form__label,
@@ -194,6 +304,39 @@
     width: 650px;
   }
 
+  .form__legend {
+    margin-bottom: 72px;
+
+    font-size: 21px;
+  }
+
+  .form__group--feedback .form__legend {
+    width: 270px;
+  }
+
+  .form__group--personal .form__legend {
+    margin-bottom: 57px;
+  }
+
+  .form__group--personal .form__item {
+    width: 310px;
+  }
+
+  .form__group--personal .form__label {
+    margin-right: 9px;
+    margin-left: 45px;
+  }
+
+  .form__text--user-name {
+    width: 216px;
+  }
+
+  //.form__text--user-name,
+  .form__text--patronymic,
+  .form__text--lastname {
+    width: 177px;
+  }
+
   .form__label--phone,
   .form__label--email,
   .form__text--phone,
@@ -204,6 +347,21 @@
   .form__text--phone,
   .form__text--email {
     background-position: 606px;
+  }
+
+  .form__group--contacts {
+    margin-top: 9px;
+    margin-bottom: 26px;
+    width: 100%;
+  }
+
+  .form__group--contacts .form__item {
+    margin-bottom: 23px;
+  }
+
+  .form__group--feedback .form__item {
+    margin-bottom: 20px;
+    margin-left: -12px;
   }
 
   .form__group--places .form__group-wrapper {
@@ -217,6 +375,61 @@
 
   .form__group--places .form__control {
     width: 242px;
+  }
+
+  .form__group--places .form__legend {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+
+  .form__group--places .form__item {
+    margin-left: 13px;
+  }
+
+  .form__group-wrapper {
+    justify-content: space-around;
+  }
+
+  .form__item--devil {
+    order: -4;
+  }
+
+  .form__item--guide-park {
+    order: -3;
+  }
+
+  .form__item--bell {
+    order: -2;
+  }
+
+  .form__item--rocks {
+    order: -1;
+  }
+
+  .form__item--bell,
+  .form__item--rocks {
+    //margin-left: 30px;
+  }
+
+  .form__group--places {
+    margin-bottom: 39px;
+  }
+
+  .form__group--message {
+    width: 100%;
+  }
+
+  .form__group--message .form__legend {
+    margin-bottom: 57px;
+  }
+
+  .form__group--message .form__label {
+    margin-bottom: 47px;
+  }
+
+  .form__button {
+    width: 325px;
   }
 }
 
