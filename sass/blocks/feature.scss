@@ -8,9 +8,8 @@
 
 .feature--promo {
   padding: 0;
+  min-height: 116px;
 }
-
-.feature--house {}
 
 .feature--souvenir .feature__content {
   margin-top: 31px;
@@ -23,7 +22,7 @@
 }
 
 .feature--food {
-  min-height: 146px;
+  min-height: 161px;
 }
 
 .feature--food .feature__logo {
@@ -88,20 +87,12 @@ Now working?
   line-height: 21px;
 }
 
-.feature--promo {
-  min-height: 116px;
-}
-
 .feature--house {
   min-height: 140px;
 }
 
 .feature--house .feature__description {
   margin-top: 18px;
-}
-
-.feature--food {
-  min-height: 161px;
 }
 
 .feature--gray {
@@ -119,32 +110,25 @@ Now working?
 }
 
 .feature--tourists .feature__description {
-  width: 220px;
+  width: 250px;
 }
 
 .feature--living-square .feature__title,
 .feature--road .feature__title,
-.feature--tourists .feature__title
-{
+.feature--tourists .feature__title {
   margin-top: 31px;
 }
 
 .feature--living-square .feature__number,
 .feature--road .feature__number,
-.feature--tourists .feature__number
-{
+.feature--tourists .feature__number {
   margin-top: 10px;
 }
 
 .feature--living-square .feature__description,
 .feature--road .feature__description,
-.feature--tourists .feature__description
-{
-  margin-top: 20px;
-}
-
 .feature--tourists .feature__description {
-  width: 250px;
+  margin-top: 20px;
 }
 
 .feature__title,
@@ -158,9 +142,6 @@ Now working?
   margin-bottom: 0;
 }
 
-/**
-Нормально, что он тут?
-*/
 .feature-wrapper {
   width: 320px;
 
@@ -208,13 +189,11 @@ Now working?
 
   .feature--living-square .feature__title,
   .feature--road .feature__title,
-  .feature--tourists .feature__title
-  {
+  .feature--tourists .feature__title {
     margin-top: 48px;
   }
 
-  .feature--gray .feature__description
-  {
+  .feature--gray .feature__description {
     width: 140px;
   }
 
@@ -224,8 +203,7 @@ Now working?
 
   .feature__logo,
   .feature--souvenir .feature__logo,
-  .feature--food .feature__logo
-  {
+  .feature--food .feature__logo {
     flex-grow: 0;
     margin: 0;
 
@@ -235,8 +213,7 @@ Now working?
 
   .feature__content,
   .feature--souvenir .feature__content,
-  .feature--food .feature__content
-  {
+  .feature--food .feature__content {
     margin: 0;
   }
 
@@ -253,17 +230,14 @@ Now working?
 
   .feature__title {
     text-align: center;
+    font-family: "PT Sans Bold", "Verdana", sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .feature__icon {
     width: 100%;
-  }
-
-  .feature__title {
-    font-family: "PT Sans Bold", Verdana, sans-serif;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 26px;
   }
 }
 
@@ -284,18 +258,13 @@ Now working?
 
   .feature--promo .feature__description,
   .feature__description {
-    width: 272px;
+    width: 292px;
   }
 
   .feature__logo,
   .feature--souvenir .feature__logo,
   .feature--food .feature__logo {
     margin-top: 60px;
-  }
-
-  .feature--promo .feature__description,
-  .feature__description {
-    width: 292px;
   }
 
   .feature--souvenir .feature__description {

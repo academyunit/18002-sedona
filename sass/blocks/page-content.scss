@@ -17,6 +17,7 @@
 .page-content__title,
 .page-content__description {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .page-content__title {
@@ -34,11 +35,6 @@
   line-height: 26px;
 
   text-align: center;
-}
-
-.page-content__title,
-.page-content__description {
-  text-transform: uppercase;
 }
 
 .page-content__feedback {
@@ -64,9 +60,10 @@
   }
 
   .page-content__title {
-    font-size: 31px;
-
     margin-bottom: 31px;
+
+    font-size: 31px;
+    font-family: "PT Sans Bold", "Verdana", sans-serif;
   }
 
   .page-content__description {
@@ -82,7 +79,7 @@
     width: 550px;
     min-height: 160px;
 
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .page-content__category--photo {
@@ -93,16 +90,8 @@
     width: 650px;
   }
 
-  /*
-  Что это тут делает?
-  */
-  .page-content__title {
-    font-family: "PT Sans Bold", Verdana, sans-serif;
-  }
-
   .page-content__title br,
-  .page-content__description br
-  {
+  .page-content__description br {
     display: none;
   }
 

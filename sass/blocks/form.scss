@@ -16,10 +16,6 @@
   margin-bottom: 20px;
 }
 
-.form__control {
-  margin-bottom: 20px;
-}
-
 .form__legend {
   margin: 0;
   padding: 0;
@@ -145,6 +141,8 @@
 
   background-repeat: no-repeat;
   background-position: 236px;
+
+  font-size: 16px;
 }
 
 .form__text--phone {
@@ -171,8 +169,7 @@
 .form__group--contacts,
 .form__group--feedback,
 .form__group--places,
-.form__group--message
-{
+.form__group--message {
   margin: 0 auto;
   width: 283px;
 }
@@ -209,12 +206,6 @@
 
 .form__group--contacts .form__legend {
   margin-bottom: 19px;
-}
-
-.form__text--phone,
-.form__text--email
-{
-  font-size: 16px;
 }
 
 .form__group--feedback {
@@ -264,32 +255,20 @@
     width: 324px;
   }
 
-  //.form__group--personal,
-  //.form__group--feedback {
-  //  width: 324px;
-  //}
-
   .form__group--personal {
-    //width: 344px;
     width: 297px;
   }
 
   .form__group--feedback {
-    width: 300px;
-  }
-
-  .form__group--feedback {
     order: -1;
+    width: 300px;
   }
 
   .form__group--places {
     flex-grow: 1;
 
     width: 100%;
-  }
-
-  .form__group--personal .form__item {
-    width: 297px;
+    margin-bottom: 39px;
   }
 
   .form__group:last-of-type .form__label,
@@ -300,6 +279,7 @@
   .form__group-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
     width: 650px;
   }
@@ -387,10 +367,6 @@
     margin-left: 13px;
   }
 
-  .form__group-wrapper {
-    justify-content: space-around;
-  }
-
   .form__item--devil {
     order: -4;
   }
@@ -410,10 +386,6 @@
   .form__item--bell,
   .form__item--rocks {
     //margin-left: 30px;
-  }
-
-  .form__group--places {
-    margin-bottom: 39px;
   }
 
   .form__group--message {
