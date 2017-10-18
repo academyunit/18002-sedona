@@ -1,7 +1,7 @@
 .copyrights {
-
-  vertical-align: top;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
 }
 
 .copyrights__author {
@@ -9,4 +9,27 @@
   line-height: 26px;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .copyrights {
+    margin-top: 45px;
+    margin-left: 80px;
+  }
+
+  .copyrights__link {
+    display: inline-block;
+
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyrights {
+    margin-left: 307px;
+  }
+
+  .copyrights__link {
+    margin-left: 0;
+  }
 }

@@ -8,14 +8,16 @@
 .finder__title {
   display: block;
 
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   font-size: 21px;
   line-height: 26px;
 }
 
 .finder__description {
-  margin-bottom: 40px;
+  width: 265px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 
   font-size: $base-font-size;
   line-height: 24px;
@@ -34,7 +36,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .finder {
+    margin-top: 54px;
+    margin-bottom: 58px;
+  }
+
   .finder__wrapper {
     width: 700px;
+  }
+
+  .finder__title {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .finder__description {
+    width: 445px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .finder__description {
+    margin-bottom: 48px;
+  }
+
+  .finder {
+    margin-bottom: 66px;
   }
 }

@@ -1,22 +1,79 @@
 .page-footer {
   display: block;
 
-  margin: 0 auto;
-  width: 320px;
+  min-height: 206px;
+  min-width: $mobile-width;
 
   @include show-outline(red);
+}
+
+.page-footer--feedback {
+  margin-top: 51px;
+  min-height: 228px;
+}
+
+.page-footer--inner .tag {
+  margin-top: 20px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    /*
+    Здесь width или min-width должен быть?
+    У нас ведь центровщик есть, а основной блок пускай тянется как хочет.
+    */
+    min-width: 770px;
+    min-height: 120px;
+    //min-width: $mobile-width;
+  }
+
+  .page-footer--inner {
+    margin-top: 64px;
+    min-height: 92px;
+  }
+
+  .page-footer--inner .social {
+    margin-top: 3px;
+  }
+
+  .page-footer--inner .copyrights {
+    margin-top: 18px;
+  }
+
+  .page-footer--photo {
+    margin-top: 108px;
+  }
+
+  .page-footer--feedback {
+    margin-top: 88px;
+    min-height: 91px;
+  }
+
+  .page-footer__wrapper {
+    width: 650px;
+
+    flex-direction: row;
+    align-items: stretch;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1037px;
+    min-width: 1037px;
+  }
+
+  .page-footer__wrapper {
+    width: 1133px;
   }
 }

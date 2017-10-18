@@ -1,12 +1,14 @@
 .navigation {
   position: relative;
 
+  padding-bottom: 56px;
+}
+
+.navigation__wrapper {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
-
-  padding-bottom: 56px;
-
-  @include show-outline(green);
 }
 
 .navigation__list {
@@ -29,17 +31,32 @@
   display: block;
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+.navigation__item {
+  min-height: 55px;
+
+  text-align: center;
 }
 
-.navigation__item:nth-child(2) {
-  margin-right: 207px;
-}
+/*
+Is it for tablet+ ?
+*/
+
+//.navigation__item:not(:last-child) {
+//  margin-right: 50px;
+//}
+//
+//.navigation__item:nth-child(2) {
+//  margin-right: 207px;
+//}
 
 .navigation__link {
-  font-size: 14px;
-  line-height: 26px;
+  display: block;
+
+  padding: 8px;
+
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 40px;
 
   color: white;
   text-decoration: none;
@@ -100,13 +117,32 @@
 
   .navigation__list {
     width: 100%;
+    margin-left: 27px;
 
     background: white;
     color: black;
   }
 
+  /**
+    Это нормальный способ сделать так меню в навигации? Сдается мне, лучше можно :)
+   */
+  .navigation__item:first-child {
+    margin-right: 79px;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-right: 205px;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-right: 50px;
+  }
+
   .navigation__link {
     color: inherit;
+
+    font-size: 14px;
+    padding: 0;
   }
 
   .navigation--show .navigation__list {
@@ -120,14 +156,25 @@
   .navigation__wrapper {
     display: flex;
 
-    width: 700px;
-    margin: 0 auto;
+    width: 721px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation--show .navigation__list {
-    justify-content: space-around;
+    justify-content: stretch;
+  }
+
+  .navigation__item:first-child {
+    margin-right: 159px;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-right: 385px;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-right: 140px;
   }
 
   .navigation__wrapper {
