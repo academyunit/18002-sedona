@@ -2,8 +2,6 @@
   min-width: $mobile-width;
 
   margin-bottom: 28px;
-
-  @include show-outline(red);
 }
 
 .page-content__category {
@@ -116,5 +114,13 @@
 
   .page-content__description--photo {
     width: 510px;
+  }
+
+  .page-content--feedback .page-content__description {
+    width: 488px;
+  }
+
+  .page-content--feedback .page-content__category {
+    margin-bottom: 0;
   }
 }
