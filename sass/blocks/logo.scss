@@ -15,3 +15,9 @@
     top: -10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    left: 47%;
+  }
+}

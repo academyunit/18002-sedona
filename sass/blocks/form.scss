@@ -444,7 +444,7 @@
 
   .form__group--contacts .form__group-wrapper,
   .form__group--places .form__group-wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
 
     width: 960px;
   }
@@ -453,24 +453,12 @@
     width: 198px;
   }
 
-  .form__group,
-  .form__group--personal,
-  .form__group--feedback {
-    width: 450px;
-  }
-
   .form__group--personal .form__legend {
     width: 260px;
   }
 
   .form__group--feedback .form__legend {
     width: 392px;
-  }
-
-  .form__group,
-  .form__group--personal,
-  .form__group--feedback {
-    width: 480px;
   }
 
   .form__group,
@@ -508,6 +496,7 @@
   .form__group--contacts .form__legend {
     flex-grow: 1;
     width: 100%;
+    margin-bottom: 72px;
   }
 
   .form__group--contacts .form__container {
@@ -528,15 +517,6 @@
 
   .form__group--contacts .form__label {
     margin-left: 0;
-  }
-
-  .form__group--contacts .form__legend {
-    margin-bottom: 72px;
-  }
-
-  .form__group--contacts .form__group-wrapper,
-  .form__group--places .form__group-wrapper {
-    justify-content: space-between;
   }
 
   .form__label--email {
