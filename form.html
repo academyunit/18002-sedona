@@ -10,7 +10,7 @@
 <header class="page-header">
   <div class="logo">
     <a href="#" class="logo__link">
-      <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
+      <img src="../img/logo-sedona-mobile.svg" alt="#" class="logo__image">
     </a>
   </div>
   <nav class="navigation navigation--show js-navigation">
@@ -28,7 +28,7 @@
 <main class="page-content page-content--feedback">
   <div class="welcome welcome--inner">
     <div class="welcome__wrapper">
-      <img class="welcome__legend" src="/img/text-sedona.svg">
+      <img class="welcome__legend" src="../img/text-sedona.svg">
     </div>
   </div>
   <section class="page-content__category">
@@ -54,13 +54,15 @@
       </div>
       <div class="form__group form__group--contacts">
         <h2 class="form__legend">Контактная информация</h2>
-        <div class="form__item">
-          <label class="form__label form__label--phone" for="phone">Контактный телефон<sup>*</sup>:</label>
-          <input class="form__text form__text--phone" id="phone" type="text" name="phone" value="" placeholder="Введите телефон">
-        </div>
-        <div class="form__item">
-          <label class="form__label form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
-          <input class="form__text form__text--email" id="email" type="text" name="email" value="" placeholder="Введите e-mail">
+        <div class="form__container">
+          <div class="form__item">
+            <label class="form__label form__label--phone" for="phone"><span class="form__surprise">Контактный</span> телефон<sup>*</sup>:</label>
+            <input class="form__text form__text--phone" id="phone" type="text" name="phone" value="" placeholder="Введите телефон">
+          </div>
+          <div class="form__item">
+            <label class="form__label form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
+            <input class="form__text form__text--email" id="email" type="text" name="email" value="" placeholder="Введите e-mail">
+          </div>
         </div>
       </div>
       <div class="form__group form__group--feedback">

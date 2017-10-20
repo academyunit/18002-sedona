@@ -10,7 +10,11 @@
 <header class="page-header">
   <div class="logo">
     <a href="#" class="logo__link">
-      <img src="/img/logo-sedona-mobile.svg" alt="#" class="logo__image">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="../img/logo-sedona-tablet.svg">
+        <img class="logo__image" src="../img/logo-sedona-mobile.svg" alt="Логотип">
+      </picture>
     </a>
   </div>
   <nav class="navigation navigation--show js-navigation">
@@ -28,7 +32,7 @@
 <main class="page-content">
   <div class="welcome">
     <div class="welcome__wrapper">
-      <img class="welcome__legend" src="/img/text-sedona-index.svg">
+      <img class="welcome__legend" src="../img/text-sedona-index.svg">
     </div>
   </div>
   <section class="page-content__category">
@@ -143,9 +147,9 @@
     <div class="map__wrapper">
       <div class="map__container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="/img/bg-map-tablet@1x.jpg">
-          <img class="map__placeholder" src="/img/bg-map-mobile@1x.jpg" alt="Карта">
+          <source media="(min-width: 1200px)" srcset="../img/bg-map-desktop@1x.jpg 1x, ../img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.jpg 1x, ../img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__placeholder" src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x" alt="Карта">
         </picture>
       </div>
     </div>

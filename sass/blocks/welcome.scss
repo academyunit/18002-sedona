@@ -8,9 +8,14 @@
   height: 390px;
 
   background-color: white;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 1536px auto;
+  }
 
   &::after {
     position: absolute;
@@ -19,7 +24,7 @@
     width: 101%;
     height: 25px;
 
-    background: transparent url("/img/bg-intro-triangle-mobile.svg");
+    background: transparent url("../img/bg-intro-triangle-mobile.svg");
 
     content: "";
   }
@@ -52,7 +57,12 @@
     margin-bottom: 47px;
 
     background-position: 100%;
-    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
 
     &::after {
       left: 0;
@@ -60,7 +70,7 @@
       height: 56px;
       width: 101%;
 
-      background: transparent url("/img/bg-intro-triangle-tablet.svg");
+      background: transparent url("../img/bg-intro-triangle-tablet.svg");
     }
   }
 
@@ -85,13 +95,18 @@
     width: 1200px;
     height: 519px;
 
-    background-image: url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1536px auto;
+    }
 
     &::after {
       /**
       add height here
        */
-      background: transparent url("/img/bg-intro-triangle-desktop.svg");
+      background: transparent url("../img/bg-intro-triangle-desktop.svg");
     }
   }
 

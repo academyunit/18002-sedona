@@ -114,7 +114,7 @@
   left: 18px;
 
   background-color: transparent;
-  background-image: url("/img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
@@ -131,6 +131,10 @@
   line-height: 26px;
 }
 
+.form__text--user-name {
+  width: 232px;
+}
+
 .form__text--phone,
 .form__text--email {
   position: relative;
@@ -140,17 +144,17 @@
   padding-right: 60px;
 
   background-repeat: no-repeat;
-  background-position: 236px;
+  background-position: 245px 16px;
 
   font-size: 16px;
 }
 
 .form__text--phone {
-  background-image: url("/img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 .form__text--email {
-  background-image: url("/img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
 }
 
 .form__textarea {
@@ -161,6 +165,8 @@
 .form__button {
   width: 280px;
   height: 60px;
+
+  border: none;
 
   font-size: 18px;
 }
@@ -268,7 +274,7 @@
     flex-grow: 1;
 
     width: 100%;
-    margin-bottom: 39px;
+    margin-bottom: 19px;
   }
 
   .form__group:last-of-type .form__label,
@@ -349,7 +355,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    width: 485px;
+    width: 509px;
     margin: 0 auto;
   }
 
@@ -364,7 +370,8 @@
   }
 
   .form__group--places .form__item {
-    margin-left: 13px;
+    margin-bottom: 29px;
+    width: 206px;
   }
 
   .form__item--devil {
@@ -372,20 +379,15 @@
   }
 
   .form__item--guide-park {
-    order: -3;
+    order: -2;
   }
 
   .form__item--bell {
-    order: -2;
+    order: -3;
   }
 
   .form__item--rocks {
     order: -1;
-  }
-
-  .form__item--bell,
-  .form__item--rocks {
-    //margin-left: 30px;
   }
 
   .form__group--message {
@@ -408,6 +410,12 @@
 @media (min-width: $desktop-width) {
   .form {
     width: 960px;
+    justify-content: space-around;
+  }
+
+  .form__text,
+  .form__textarea {
+    font-size: 16px;
   }
 
   .form__group,
@@ -436,12 +444,99 @@
 
   .form__group--contacts .form__group-wrapper,
   .form__group--places .form__group-wrapper {
-    justify-content: space-around;
+    justify-content: space-between;
 
     width: 960px;
   }
 
   .form__group--places .form__control {
     width: 198px;
+  }
+
+  .form__group--personal .form__legend {
+    width: 260px;
+  }
+
+  .form__group--feedback .form__legend {
+    width: 392px;
+  }
+
+  .form__group,
+  .form__group--personal {
+    width: 423px;
+  }
+
+  .form__group--feedback {
+    width: 473px;
+  }
+
+  .form__group--personal .form__item {
+    width: 440px;
+  }
+
+  .form__text--user-name {
+    width: 346px;
+  }
+
+  .form__text--patronymic,
+  .form__text--lastname {
+    width: 307px;
+  }
+
+  .form__group--contacts {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+  }
+
+  .form__group--contacts .form__legend {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 72px;
+  }
+
+  .form__group--contacts .form__container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .form__surprise {
+    display: none;
+  }
+
+  .form__label--phone {
+    width: 80px;
+    margin-left: 0;
+  }
+
+  .form__group--contacts .form__label {
+    margin-left: 0;
+  }
+
+  .form__label--email {
+    width: 161px;
+  }
+
+  .form__group:last-of-type .form__label,
+  .form__group:last-of-type .form__textarea {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 479px;
+  }
+
+  .form__group--message .form__label {
+    margin-bottom: 52px;
+  }
+
+  .form__item--guide-park {
+    margin-right: -20px;
   }
 }
