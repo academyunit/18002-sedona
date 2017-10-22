@@ -317,13 +317,34 @@
   background-image: url("../img/icon-mail.svg");
 }
 
+.form__group--controls {
+  margin: 0 auto;
+  width: 283px;
+}
+
+.form__note {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .form {
-    width: 648px;
+  .form__group--controls {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: auto;
   }
 
-  .form__group {
-    width: 324px;
+  .form__note {
+    display: block;
+
+    margin-top: 21px;
+    text-transform: uppercase;
+  }
+
+  .form {
+    width: 648px;
   }
 
   .form__group--personal {
@@ -331,15 +352,36 @@
   }
 
   .form__group--feedback {
+    position: relative;
     order: -1;
     width: 300px;
+  }
+
+  .form__group--feedback::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -12px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
+  }
+
+  .form__group--contacts .form__legend {
+    background: white;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    margin-top: -10px;
   }
 
   .form__group--places {
     flex-grow: 1;
 
     width: 100%;
-    margin-bottom: 19px;
+    margin-bottom: 31px;
+
+    border-top: 1px solid #e5e5e5;
   }
 
   .form__group:last-of-type .form__label,
@@ -401,9 +443,10 @@
   }
 
   .form__group--contacts {
-    margin-top: 9px;
-    margin-bottom: 26px;
+    margin-top: 21px;
+    margin-bottom: 48px;
     width: 100%;
+    border-top: 1px solid #e5e5e5;
   }
 
   .form__group--contacts .form__item {
@@ -429,9 +472,12 @@
   }
 
   .form__group--places .form__legend {
-    width: 280px;
+    width: 410px;
     margin: 0 auto;
+    margin-top: -26px;
     margin-bottom: 57px;
+
+    background: white;
   }
 
   .form__group--places .form__item {
@@ -461,13 +507,19 @@
 
   .form__group--message {
     width: 100%;
+    border-top: 1px solid #e5e5e5;
   }
 
   .form__group--message .form__legend {
+    margin: 0 auto;
+    margin-top: -14px;
     margin-bottom: 57px;
+    background: white;
+    width: 410px;
   }
 
   .form__group--message .form__label {
+    width: 100%;
     margin-bottom: 47px;
   }
 
@@ -487,10 +539,9 @@
     font-size: 16px;
   }
 
-  .form__group,
   .form__group--personal,
   .form__group--feedback {
-    width: 480px;
+    width: 100%;
   }
 
   .form__group:last-of-type {
@@ -530,13 +581,21 @@
     width: 392px;
   }
 
-  .form__group,
   .form__group--personal {
     width: 423px;
   }
 
+  .form__group--places {
+    width: 100%;
+  }
+
   .form__group--feedback {
     width: 473px;
+  }
+
+  .form__group--feedback::after {
+    top: 6px;
+    right: 8px;
   }
 
   .form__group--personal .form__item {
@@ -560,12 +619,11 @@
     flex-wrap: wrap;
 
     width: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 51px;
   }
 
   .form__group--contacts .form__legend {
-    flex-grow: 1;
-    width: 100%;
+    width: 400px;
     margin-bottom: 72px;
   }
 
