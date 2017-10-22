@@ -98,12 +98,6 @@
     justify-content: stretch;
   }
 
-  .feature-image--triangled {
-    position: static;
-
-    min-height: 257px;
-  }
-
   .feature-image--triangled::before {
     display: none;
   }
@@ -128,6 +122,10 @@
 
   .feature-image--triangled {
     order: -8;
+
+    position: static;
+
+    min-height: 257px;
   }
 
   .feature--house {
