@@ -50,6 +50,10 @@
   height: 203px;
 
   background: gray url("../img/video-mobile@1x.jpg") no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .tour__bar {
@@ -112,26 +116,20 @@
 }
 
 .tour__control--replay {
-  top: 22px;
-  left: 23px;
-
-  background-image: url("../img/icon-video-replay.svg");
+  top: 16px;
+  left: 20px;
 }
 
 .tour__control--subtitles {
-  top: 22px;
-  right: 73px;
+  top: 16px;
+  right: 78px;
 
   width: 36px;
-
-  background-image: url("../img/icon-video-subtitles.svg");
 }
 
 .tour__control--fullscreen {
-  top: 22px;
-  right: 23px;
-
-  background-image: url("../img/icon-video-fullscreen.svg");
+  top: 16px;
+  right: 29px;
 }
 
 
@@ -149,11 +147,13 @@
   }
 
   .tour__description {
-    margin-bottom: 77px;
+    margin-bottom: 74px;
   }
 
   .tour__title {
     font-size: 30px;
+
+    margin-bottom: 32px;
   }
 
   .tour__player,
@@ -167,6 +167,10 @@
     height: 100%;
 
     background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
   }
 
   .tour__bar {
@@ -181,11 +185,13 @@
   }
 
   .tour__indicator {
-    margin-left: 24%;
+    margin-left: 29%;
   }
 
   .tour__line {
-    width: 460px;
+    width: 391px;
+
+    left: 44%;
   }
 
   .tour__controls {
@@ -202,21 +208,34 @@
   .tour__control {
     position: absolute;
     z-index: 3;
+
+    cursor: pointer;
+  }
+
+  .tour__control:hover {
+    fill: #333333;
   }
 
   .tour__control--replay {
-    top: 10px;
-    left: 36px;
+    top: 7px;
+    left: 30px;
   }
 
   .tour__control--subtitles {
-    top: 8px;
-    right: 90px;
+    top: 7px;
+    right: 95px;
   }
 
   .tour__control--fullscreen {
-    top: 10px;
-    right: 39px;
+    top: 7px;
+    right: 45px;
+  }
+
+  .tour__control--replay,
+  .tour__control--subtitles,
+  .tour__control--fullscreen {
+    fill: #ffffff;
+    background: transparent;
   }
 }
 
@@ -235,14 +254,19 @@
   }
 
   .tour__line {
-    width: 616px;
+    width: 539px;
+    left: 45%;
   }
 
   .tour__indicator {
-    margin-left: 18%;
+    margin-left: 20%;
   }
 
   .tour__video {
     background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
   }
 }

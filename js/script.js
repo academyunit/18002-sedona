@@ -3,10 +3,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
      * Menu show/hide functionality.
      */
     (() => {
+        const viewPort = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
         const mobileMenu = document.querySelector('.js-navigation');
+
         if(!mobileMenu) {
             console.log('Main menu\'s selector is not found! Check your DOM tree!');
             return;
+        }
+
+        // Hide menu on mobile by default if JS is available.
+        if (viewPort < 768) {
+            mobileMenu.classList.remove('navigation--show'); // Hide the menu by default on mobile
         }
 
         const sandwichButton = document.querySelector('.navigation__sandwich-control');
@@ -15,9 +22,25 @@ document.addEventListener('DOMContentLoaded', (e) => {
             return;
         }
 
+        sandwichButton.classList.remove('navigation__sandwich-control--hidden');
         sandwichButton.addEventListener('click', (e) => {
             mobileMenu.classList.toggle('navigation--show');
         });
+
+        /*
+         If a user decides to "play with a window" we've got him covered here for all version: mobile/tablet/desktop!
+         */
+        window.addEventListener("resize", menuWatcher);
+
+        function menuWatcher() {
+            var viewPortWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+            if (viewPortWidth < 768) {
+                mobileMenu.classList.remove('navigation--show');
+            } else {
+                mobileMenu.classList.add('navigation--show');
+            }
+        }
     })();
 
     /**

@@ -1,53 +1,29 @@
 @font-face {
   font-family: "PT Sans";
-  font-weight: bolder;
-  font-style: bolder;
-
-  src: url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
+  src:
+    local("PT Sans"),
+    local("PTSans"),
+    local("PT-Sans"),
+    local("PT_Sans");
+  src:
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
+  src:
+    local("PT Sans Bold"),
+    local("PTSansBold"),
+    local("PT-Sans-Bold"),
+    local("PT_Sans_Bold");
+  src:
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
-  font-style: bold;
-
-  src: url("../fonts/ptsans.woff") format("woff"),
-    url("../fonts/ptsans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-weight: lighter;
-  font-style: lighter;
-
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  font-weight: bolder;
-  font-style: bolder;
-
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  font-weight: bold;
-  font-style: bold;
-
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  font-weight: lighter;
-  font-style: lighter;
-
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
 }
