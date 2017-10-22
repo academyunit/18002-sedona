@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  padding: 10px;
+  padding: 0;
 
   font-family: "PT Sans", "Verdana", "Times New Roman", sans-serif;
   font-weight: normal;
@@ -20,14 +20,6 @@ body {
 
   color: black;
   background: white;
-}
-
-/**
-Remove it from here
-*/
-fieldset {
-  margin: 0;
-  padding: 0;
 }
 
 .button {
@@ -47,6 +39,10 @@ fieldset {
 
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #669ec0;
 }
 
 .visually-hidden {

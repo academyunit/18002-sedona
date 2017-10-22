@@ -118,6 +118,23 @@
   background-repeat: no-repeat;
 }
 
+.form__text:hover,
+.form__textarea:hover,
+.form__label:hover::before
+{
+  background-color: #e5e5e5;
+}
+
+.form__text:focus,
+.form__text:active,
+.form__textarea:focus,
+.form__textarea:active
+{
+  background-color: #fff;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+}
+
 .form__text,
 .form__textarea {
   width: 194px;
@@ -129,6 +146,30 @@
 
   font-size: 18px;
   line-height: 26px;
+}
+
+.form__text {
+  height: 59px;
+  border: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  background-color: #f2f2f2;
+
+  overflow: hidden;
+}
+
+.form__textarea {
+  padding: 16px 20px 20px;
+  width: 100%;
+  height: 160px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: 0;
+  resize: none;
 }
 
 .form__text--user-name {
@@ -147,14 +188,6 @@
   background-position: 245px 16px;
 
   font-size: 16px;
-}
-
-.form__text--phone {
-  background-image: url("../img/icon-phone.svg");
-}
-
-.form__text--email {
-  background-image: url("../img/icon-mail.svg");
 }
 
 .form__textarea {
@@ -250,6 +283,46 @@
 
 .form__group--message .form__label {
   margin-bottom: 42px;
+}
+
+.form__item--phone,
+.form__item--email {
+  position: relative;
+}
+
+.form__item--phone::after,
+.form__item--email::after,
+.form__item--phone::before,
+.form__item--email::before
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.form__item--phone::before,
+.form__item--email::before {
+  z-index: 2;
+
+  background-repeat: no-repeat;
+  background-size: 36%;
+  background-position: 50% 43%;
+}
+
+.form__item--phone::before {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.form__item--email::before {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.form__textarea {
+  font-size: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -390,6 +463,10 @@
     order: -1;
   }
 
+  .form__item--rocks .form__label--checkbox {
+    width: 210px;
+  }
+
   .form__group--message {
     width: 100%;
   }
@@ -491,6 +568,7 @@
     flex-wrap: wrap;
 
     width: 100%;
+    margin-bottom: 31px;
   }
 
   .form__group--contacts .form__legend {

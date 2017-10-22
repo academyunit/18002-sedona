@@ -22,10 +22,20 @@
   .map__container {
     height: 350px;
   }
+
+  .map__marker {
+    top: 47%;
+    left: 48%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
     width: 1200px;
+  }
+
+  .map__marker {
+    top: 46%;
+    left: 49%;
   }
 }

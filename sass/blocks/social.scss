@@ -26,6 +26,10 @@
   background-position: 50%;
 }
 
+.social__link:hover {
+  background-color: #669ec0;
+}
+
 .social__link--twitter {
   background-image: url("../img/icon-twitter.svg");
 }
@@ -34,8 +38,8 @@
   background-image: url("../img/icon-facebook.svg");
 }
 
-.social__link--vk {
-  background-image: url("../img/icon-facebook.svg");
+.social__link--youtube {
+  background-image: url("../img/icon-youtube.svg");
 }
 
 @media (min-width: $tablet-width) {
