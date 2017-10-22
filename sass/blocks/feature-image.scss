@@ -11,6 +11,23 @@
   min-height: 217px;
 }
 
+.feature-image--triangled {
+  position: relative;
+}
+
+.feature-image--triangled::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 102%;
+  height: 5%;
+  background: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 104% auto;
+}
+
 .feature-image--triangled .feature__description,
 .feature-image--reversed .feature__description {
   text-align: center;
@@ -57,20 +74,12 @@
   background-repeat: no-repeat;
 }
 
-.feature-image__picture--main-city {
-  background-image: url("../img/main-city-mobile@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/main-city-mobile@2x.jpg");
-  }
-}
-
-.feature-image__picture--main-bridge {
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/main-bridge-mobile@2x.jpg");
-  }
+.feature-image__promo {
+  width: 320px;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ded3d1;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,6 +96,10 @@
 
   .feature-image:first-child .feature {
     justify-content: stretch;
+  }
+
+  .feature-image--triangled::before {
+    display: none;
   }
 
   .feature-image--triangled .feature__number {
@@ -107,24 +120,12 @@
     height: 256px;
   }
 
-  .feature-image__picture--main-city {
-    background-image: url("../img/main-city-tablet@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-city-tablet@2x.jpg");
-    }
-  }
-
-  .feature-image__picture--main-bridge {
-    background-image: url("../img/main-bridge-tablet@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-bridge-tablet@2x.jpg");
-    }
-  }
-
   .feature-image--triangled {
     order: -8;
+
+    position: static;
+
+    min-height: 257px;
   }
 
   .feature--house {
@@ -144,7 +145,7 @@
   }
 
   .feature-image--triangled .feature-image__picture {
-    height: 253px;
+    height: 257px;
   }
 
   .feature-image--reversed {
@@ -176,6 +177,11 @@
     flex-grow: 1;
     width: 100%;
   }
+
+  .feature-image__promo {
+    width: 512px;
+    height: 257px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -184,24 +190,6 @@
 
     flex-grow: 1;
     width: 100%;
-  }
-
-  .feature-image__picture--main-city {
-    background-image: url("../img/main-city-desktop@1x.jpg");
-    background-position: 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-city-desktop@2x.jpg");
-    }
-  }
-
-  .feature-image__picture--main-bridge {
-    background-image: url("../img/main-bridge-desktop@1x.jpg");
-    background-position: 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-bridge-desktop@2x.jpg");
-    }
   }
 
   .feature-image--triangled .feature__title {
@@ -230,5 +218,9 @@
 
   .feature-image--reversed .feature__title {
     margin-top: 51px;
+  }
+
+  .feature-image__promo {
+    width: 800px;
   }
 }

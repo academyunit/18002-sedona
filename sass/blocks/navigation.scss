@@ -37,37 +37,31 @@
   text-align: center;
 }
 
-/*
-Is it for tablet+ ?
-*/
+.navigation__item:not(:first-child) {
+  border-top: 1px solid #9ac2db;
+}
 
-//.navigation__item:not(:last-child) {
-//  margin-right: 50px;
-//}
-//
-//.navigation__item:nth-child(2) {
-//  margin-right: 207px;
-//}
+.navigation__item:not(:last-child) {
+  border-bottom: 1px solid #678fa8;
+}
+
+.navigation__link:hover {
+  background-color: #669ec0;
+}
 
 .navigation__link {
   display: block;
-
-  padding: 8px;
-
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 18px;
-  font-weight: bolder;
   line-height: 40px;
-
-  color: white;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
   text-decoration: none;
+  background-color: #81b3d2;
 }
 
-/*
-@todo-s: refactor this block. should act like a toggle button since this point.
-
-- differentiate between open/close states (display sandwich/close icon)
-- implement both using CSS
-*/
 .navigation__sandwich {
   position: relative;
 
@@ -108,9 +102,32 @@ Is it for tablet+ ?
   }
 }
 
+.navigation--show .navigation__sandwich-control {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    width: 5px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 1px;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .navigation {
     width: auto;
+    min-height: 63px;
     margin: 0;
     padding-bottom: 0;
   }
@@ -123,9 +140,14 @@ Is it for tablet+ ?
     color: black;
   }
 
-  /**
-    Это нормальный способ сделать так меню в навигации? Сдается мне, лучше можно :)
-   */
+  .navigation__item--active .navigation__link {
+    color: #766357;
+  }
+
+  .navigation__item--active:hover .navigation__link {
+    color: #604e43;
+  }
+
   .navigation__item:first-child {
     margin-right: 79px;
   }
@@ -139,10 +161,25 @@ Is it for tablet+ ?
   }
 
   .navigation__link {
-    color: inherit;
-
-    font-size: 14px;
     padding: 0;
+
+    padding-top: 14px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .navigation__item:not(:first-child),
+  .navigation__item:not(:last-child),
+  .navigation__item:nth-child(2) {
+    border: none;
+  }
+
+  .navigation__link:hover {
+    color: #81b3d2;
+    background-color: transparent;
   }
 
   .navigation--show .navigation__list {
@@ -150,6 +187,10 @@ Is it for tablet+ ?
   }
 
   .navigation__sandwich-control {
+    display: none;
+  }
+
+  .navigation__sandwich-control--hidden {
     display: none;
   }
 
