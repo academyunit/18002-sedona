@@ -143,7 +143,7 @@
         <div class="finder__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
         </div>
-        <a href="#" class="page-content__button button">Найти гостиницу</a>
+        <a target="_blank" href="search.html" class="page-content__button button">Найти гостиницу</a>
       </div>
     </section>
     <div class="map">
@@ -154,10 +154,7 @@
             <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.jpg 1x, ../img/bg-map-tablet@2x.jpg 2x">
             <img class="map__placeholder" src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x" alt="Карта">
           </picture>
-          <svg class="map__marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
-            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-          </svg>
+          <div class="map__marker"></div>
         </div>
       </div>
     </div>
@@ -186,5 +183,7 @@
   </footer>
 </div>
 <script src="js/script.js"></script>
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHmitQ4aa7BfB9-dHdQS3qF8qeDNHpwFE&callback=window.map"></script>
 </body>
 </html>

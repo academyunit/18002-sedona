@@ -1,11 +1,9 @@
-.map__container {
-  position: relative;
+.mpa {
+  display: none;
 }
 
-.map__marker {
-  position: absolute;
-  top: 45%;
-  left: 45%;
+.map__container {
+  position: relative;
 }
 
 .map__wrapper {
@@ -13,7 +11,28 @@
   width: 320px;
 }
 
+
+.map__marker {
+  position: absolute;
+  left: calc(50% - 14px);
+  top: calc(50% - 14px);
+
+  box-sizing: content-box;
+  width: 17px;
+  height: 17px;
+
+  font-size: 0;
+
+  background-color: #81b4d4;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
+  .map {
+    display: block;
+  }
+
   .map__wrapper {
     width: 770px;
     height: 351px;
@@ -22,20 +41,10 @@
   .map__container {
     height: 350px;
   }
-
-  .map__marker {
-    top: 47%;
-    left: 48%;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
     width: 1200px;
-  }
-
-  .map__marker {
-    top: 46%;
-    left: 49%;
   }
 }
