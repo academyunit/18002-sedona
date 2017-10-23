@@ -38,7 +38,7 @@
 
 .welcome--inner {
   height: 156px;
-  background-position: 60%;
+  background-position: center bottom;
 }
 
 .welcome--inner .welcome__legend {
@@ -83,6 +83,8 @@
   .welcome--inner {
     margin-bottom: 74px;
     height: 287px;
+
+    background-position: center bottom;
   }
 
   .welcome__legend {
@@ -105,7 +107,6 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1536px auto;
     }
 
     &::after {

@@ -223,4 +223,15 @@
   .feature-image__promo {
     width: 800px;
   }
+
+  .feature-image__picture {
+    overflow: hidden;
+  }
+
+  .feature-image__promo {
+    width: auto;
+    height: auto;
+
+    margin-top: -76px;
+  }
 }

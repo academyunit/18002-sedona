@@ -50,6 +50,7 @@
   height: 203px;
 
   background: gray url("../img/video-mobile@1x.jpg") no-repeat;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-mobile@2x.jpg");
