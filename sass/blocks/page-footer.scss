@@ -27,13 +27,8 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    /*
-    Здесь width или min-width должен быть?
-    У нас ведь центровщик есть, а основной блок пускай тянется как хочет.
-    */
     min-width: 770px;
     min-height: 120px;
-    //min-width: $mobile-width;
   }
 
   .page-footer--inner {
@@ -51,6 +46,14 @@
 
   .page-footer--photo {
     margin-top: 64px;
+  }
+
+  .page-footer--photo .social__list {
+    margin-top: 0;
+  }
+
+  .page-footer--feedback .social__list {
+    margin-top: 7px;
   }
 
   .page-footer--feedback {

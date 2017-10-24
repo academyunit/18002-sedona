@@ -142,10 +142,14 @@
 
   .navigation__item--active .navigation__link {
     color: #766357;
-  }
 
-  .navigation__item--active:hover .navigation__link {
-    color: #604e43;
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 
   .navigation__item:first-child {
@@ -169,17 +173,21 @@
     line-height: 26px;
     color: #000000;
     background-color: #ffffff;
+
+    &:hover {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .navigation__item:not(:first-child),
   .navigation__item:not(:last-child),
   .navigation__item:nth-child(2) {
     border: none;
-  }
-
-  .navigation__link:hover {
-    color: #81b3d2;
-    background-color: transparent;
   }
 
   .navigation--show .navigation__list {

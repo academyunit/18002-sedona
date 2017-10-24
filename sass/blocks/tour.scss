@@ -91,14 +91,21 @@
 
   cursor: pointer;
   background-color: transparent;
+
+  outline: none;
 }
 
 .tour__icon {
   fill: #5c6870;
-}
 
-.tour__icon:hover {
-  fill: #333333;
+  &:hover,
+  &:focus {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .tour__player {
