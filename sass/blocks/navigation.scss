@@ -212,10 +212,17 @@
 
   .navigation__item:nth-child(2) {
     margin-right: 385px;
+    min-width: 99px;
   }
 
   .navigation__item:nth-child(3) {
     margin-right: 140px;
+    min-width: 106px;
+  }
+
+  .navigation__item:last-child {
+    margin-right: 140px;
+    min-width: 100px;
   }
 
   .navigation__wrapper {
