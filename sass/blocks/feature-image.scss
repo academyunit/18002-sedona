@@ -103,16 +103,13 @@
   }
 
   .feature-image--triangled .feature__number {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .feature-image--reversed .feature__title {
     margin-top: 0;
-    width: 156px;
-  }
-
-  .feature-image--reversed .feature__description {
-    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 175px;
   }
 
   .feature-image__picture {
@@ -218,6 +215,10 @@
 
   .feature-image--reversed .feature__title {
     margin-top: 51px;
+  }
+
+  .feature-image--reversed .feature__description {
+    width: 232px;
   }
 
   .feature-image__promo {

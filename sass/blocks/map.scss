@@ -1,16 +1,16 @@
-.mpa {
-  display: none;
+.map {
+  display: block;
 }
 
 .map__container {
   position: relative;
+  height: 350px;
 }
 
 .map__wrapper {
   margin: 0 auto;
   width: 320px;
 }
-
 
 .map__marker {
   position: absolute;

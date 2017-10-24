@@ -5,7 +5,6 @@
 
   width: 320px;
   height: 460px;
-
   margin: 0 auto;
 }
 
@@ -38,9 +37,71 @@
   width: 240px;
 }
 
-.tour__player {
-  position: relative;
+.tour__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.tour__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  margin: 0;
+  margin-top: -49px;
+  padding: 0;
+
+  list-style-type: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 45px, #f2f2f2 45px);
+}
+
+.tour__control {
+  font-size: 0;
+  line-height: 0;
+}
+
+.tour__control--progress-bar {
+  order: -1;
+
+  width: 100%;
+  margin-left: 0;
+  padding: 22px 22px 20px;
+}
+
+.tour__control--subtitles {
+  margin-left: auto;
+}
+
+.tour__line {
+  position: relative;
+  height: 3px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tour__button {
+  width: 63px;
+  height: 65px;
+  padding: 0;
+  border: 0;
+
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.tour__icon {
+  fill: #5c6870;
+}
+
+.tour__icon:hover {
+  fill: #333333;
+}
+
+.tour__player {
   width: 320px;
   height: 270px;
 }
@@ -57,87 +118,58 @@
   }
 }
 
-.tour__bar {
-  position: relative;
-
-  width: 283px;
-  height: 46px;
-  margin-top: -46px;
-  margin-left: 20px;
-
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.tour__line {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 240px;
-  height: 4px;
-
-  transform: translate(-50%, -50%);
-
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .tour__indicator {
-  width: 10px;
-  height: 10px;
-  margin-top: -3px;
-  margin-left: 14%;
+  position: absolute;
+  top: -3px;
+  left: 15%;
+
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
   border-radius: 50%;
 
-  background: white;
-
-  cursor: pointer;
+  background-color: white;
 }
-
-.tour__controls {
-  position: absolute;
-  top: 202px;
-  left: 19px;
-
-  width: 283px;
-  height: 66px;
-
-  background: #f2f2f2;
-}
-
-.tour__control {
-  position: absolute;
-
-  width: 22px;
-  height: 22px;
-
-  font-size: 0;
-
-  border: none;
-  background: #f2f2f2 no-repeat;
-}
-
-.tour__control--replay {
-  top: 16px;
-  left: 20px;
-}
-
-.tour__control--subtitles {
-  top: 16px;
-  right: 78px;
-
-  width: 36px;
-}
-
-.tour__control--fullscreen {
-  top: 16px;
-  right: 29px;
-}
-
 
 @media (min-width: $tablet-width) {
+  .tour__container {
+    padding: 0;
+  }
+
   .tour {
     width: 650px;
     min-height: 690px;
+  }
+
+  .tour__controls {
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -93px;
+
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    transition: background-color 200ms ease-out;
+  }
+
+  .tour__icon {
+    fill: white;
+  }
+
+  .tour__control--replay {
+    padding-left: 10px;
+  }
+
+  .tour__control--fullscreen {
+    padding-right: 16px;
+  }
+
+  .tour__control--progress-bar {
+    order: 0;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .tour__title,
@@ -157,6 +189,14 @@
     margin-bottom: 32px;
   }
 
+  .tour__indicator {
+    top: -4px;
+    left: 29%;
+
+    width: 9px;
+    height: 9px;
+  }
+
   .tour__player,
   .tour__video {
     width: 650px;
@@ -172,71 +212,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-tablet@2x.jpg");
     }
-  }
-
-  .tour__bar {
-    z-index: 2;
-
-    width: 100%;
-    height: 92px;
-    margin-top: -93px;
-    margin-left: 0;
-
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  .tour__indicator {
-    margin-left: 29%;
-  }
-
-  .tour__line {
-    width: 391px;
-
-    left: 44%;
-  }
-
-  .tour__controls {
-    position: relative;
-    top: -65px;
-    left: 0;
-
-    width: 100%;
-    height: 66px;
-
-    background-color: transparent;
-  }
-
-  .tour__control {
-    position: absolute;
-    z-index: 3;
-
-    cursor: pointer;
-  }
-
-  .tour__control:hover {
-    fill: #333333;
-  }
-
-  .tour__control--replay {
-    top: 7px;
-    left: 30px;
-  }
-
-  .tour__control--subtitles {
-    top: 7px;
-    right: 95px;
-  }
-
-  .tour__control--fullscreen {
-    top: 7px;
-    right: 45px;
-  }
-
-  .tour__control--replay,
-  .tour__control--subtitles,
-  .tour__control--fullscreen {
-    fill: #ffffff;
-    background: transparent;
   }
 }
 
@@ -254,13 +229,9 @@
     width: 800px;
   }
 
-  .tour__line {
-    width: 539px;
-    left: 45%;
-  }
-
   .tour__indicator {
-    margin-left: 20%;
+    top: -2px;
+    left: 20%;
   }
 
   .tour__video {

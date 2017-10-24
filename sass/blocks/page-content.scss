@@ -1,7 +1,11 @@
 .page-content {
   min-width: $mobile-width;
 
-  margin-bottom: 28px;
+  margin-bottom: 36px;
+}
+
+.page-content--photo {
+  margin-bottom: 27px;
 }
 
 .page-content__category {
@@ -102,6 +106,7 @@
   }
 
   .page-content__category--index .page-content__title {
+    margin-bottom: 35px;
     font-size: 21px;
   }
 
