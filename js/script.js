@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', function(e) {
     /**
      * Menu show/hide functionality.
      */
-    (() => {
-        const viewPort = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        const mobileMenu = document.querySelector('.js-navigation');
+    (function() {
+        var viewPort = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var mobileMenu = document.querySelector('.js-navigation');
 
         if(!mobileMenu) {
             console.log('Main menu\'s selector is not found! Check your DOM tree!');
@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
             mobileMenu.classList.remove('navigation--show'); // Hide the menu by default on mobile
         }
 
-        const sandwichButton = document.querySelector('.navigation__sandwich-control');
+        var sandwichButton = document.querySelector('.navigation__sandwich-control');
         if (!sandwichButton) {
             console.log('Main menu\'s sandwich selector is not found! Check your DOM tree!');
             return;
         }
 
         sandwichButton.classList.remove('navigation__sandwich-control--hidden');
-        sandwichButton.addEventListener('click', (e) => {
+        sandwichButton.addEventListener('click', function(e) {
             mobileMenu.classList.toggle('navigation--show');
         });
 
@@ -48,23 +48,23 @@ document.addEventListener('DOMContentLoaded', (e) => {
      *
      * @type {Element}
      */
-    (() => {
-        const tourProgressBarContainer = document.querySelector('.js-tour');
+    (function() {
+        var tourProgressBarContainer = document.querySelector('.js-tour');
         if (!tourProgressBarContainer) {
             console.log('Progress bar\'s selector is not found! Check your DOM tree!');
             return;
         }
 
-        const tourProgressBar = tourProgressBarContainer.querySelector('.tour__line');
-        const tourProgressBarIndicator = tourProgressBarContainer.querySelector('.tour__indicator');
+        var tourProgressBar = tourProgressBarContainer.querySelector('.tour__line');
+        var tourProgressBarIndicator = tourProgressBarContainer.querySelector('.tour__indicator');
 
         if (tourProgressBarContainer && tourProgressBarIndicator) {
-            tourProgressBarContainer.addEventListener('mousedown', (e) => {
+            tourProgressBarContainer.addEventListener('mousedown', function(e) {
                 startMoving();
                 startHighlighting();
                 console.log('start moving');
             });
-            tourProgressBarContainer.addEventListener('mouseup', (e) => {
+            tourProgressBarContainer.addEventListener('mouseup', function(e) {
                 stopMoving();
                 stopHighlighting();
                 console.log('stop moving');
@@ -83,11 +83,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
              *
              * @param revertChanges
              */
-            function initiateHighlighting(revertChanges = false) {
-                let bgColor = 'rgba(255, 165, 0, 0.45)';
-                let width = '20px';
-                let height = '20px';
-                let marginTop = '-9px';
+            function initiateHighlighting(revertChanges) {
+                revertChanges = revertChanges || false;
+
+                var bgColor = 'rgba(255, 165, 0, 0.45)';
+                var width = '20px';
+                var height = '20px';
+                var marginTop = '-9px';
 
                 if (revertChanges) {
                     bgColor = 'rgba(255, 255, 255, 0.2)';
@@ -116,9 +118,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
              * @param e
              */
             function moveTourControl(e) {
-                const currentCoordinate = getCoordinate(e.clientX);
-                const startProgressBarLength = getStartProgressBarLength();
-                const totalProgressBarLength = getTotalProgressBarLength();
+                var currentCoordinate = getCoordinate(e.clientX);
+                var startProgressBarLength = getStartProgressBarLength();
+                var totalProgressBarLength = getTotalProgressBarLength();
 
                 /**
                  * It can't go beyond its start position...
@@ -148,8 +150,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
              * @returns {number}
              */
             function getCoordinate(coordinate) {
-                const parentContainerCoordinates = tourProgressBar.getBoundingClientRect();
-                const indicatorHalfSize = (parseInt(tourProgressBarIndicator.style.width) / 2);
+                var parentContainerCoordinates = tourProgressBar.getBoundingClientRect();
+                var indicatorHalfSize = (parseInt(tourProgressBarIndicator.style.width) / 2);
 
                 return (coordinate - parseInt(parentContainerCoordinates.left) - indicatorHalfSize);
             }

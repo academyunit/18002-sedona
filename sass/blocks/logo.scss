@@ -12,12 +12,14 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    top: -10px;
+    top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     left: 47%;
+
+    width: 114px;
   }
 }

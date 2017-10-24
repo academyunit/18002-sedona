@@ -404,7 +404,7 @@
   }
 
   .form__group--feedback .form__legend {
-    width: 270px;
+    width: 280px;
   }
 
   .form__group--personal .form__legend {
@@ -413,6 +413,8 @@
 
   .form__group--personal .form__item {
     width: 310px;
+
+    margin-top: 3px;
   }
 
   .form__group--personal .form__label {
@@ -507,6 +509,7 @@
 
   .form__group--message {
     width: 100%;
+    margin-bottom: 8px;
     border-top: 1px solid #e5e5e5;
   }
 
@@ -585,8 +588,13 @@
     width: 423px;
   }
 
+  .form__group--message {
+    margin-bottom: 0;
+  }
+
   .form__group--places {
     width: 100%;
+    margin-bottom: 36px;
   }
 
   .form__group--feedback {

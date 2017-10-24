@@ -20,6 +20,10 @@ body {
 
   color: black;
   background: white;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .button {
@@ -40,10 +44,31 @@ body {
 
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
-.button:hover {
-  background-color: #669ec0;
+.button--disabled {
+  background-color: #e5e5e5;
+
+  &:hover,
+  &:active {
+    background-color: #e5e5e5;
+  }
+
+  cursor: default;
 }
 
 .visually-hidden {
